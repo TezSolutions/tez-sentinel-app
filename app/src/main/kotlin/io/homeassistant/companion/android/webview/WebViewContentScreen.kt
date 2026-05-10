@@ -137,7 +137,7 @@ internal fun WebViewContentScreen(
 /**
  * Wrapper for WebView, blurring the contents when the app is locked.
  *
- * If the Home Assistant frontend does not handle edge-to-edge insets
+ * If the Tez Sentinel frontend does not handle edge-to-edge insets
  * (core <2025.12), it also wraps the WebView with colored overlays matching
  * the safe area insets.
  *

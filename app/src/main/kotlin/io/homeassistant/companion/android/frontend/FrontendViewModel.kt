@@ -70,7 +70,7 @@ val CONNECTION_TIMEOUT = 10.seconds
 /**
  * ViewModel for frontend screen.
  *
- * Handles loading the Home Assistant WebView, authentication, external bus communication,
+ * Handles loading the Tez Sentinel WebView, authentication, external bus communication,
  * and error handling. Implements [FrontendConnectionErrorStateProvider] to enable use of the shared error screen.
  *
  * This ViewModel acts as an orchestrator that delegates to specialized managers.

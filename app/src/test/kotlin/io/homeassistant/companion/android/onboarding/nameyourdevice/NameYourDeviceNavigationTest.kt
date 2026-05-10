@@ -103,7 +103,7 @@ class NameYourDeviceNavigationTest {
         composeTestRule.awaitIdle()
 
         assertEquals(
-            "There was an error loading Home Assistant, please review the connection settings and try again. We will attempt to try another provided URL when you select Refresh.",
+            "There was an error loading Tez Sentinel, please review the connection settings and try again. We will attempt to try another provided URL when you select Refresh.",
             errorMessage,
         )
         assertTrue(backPressed)

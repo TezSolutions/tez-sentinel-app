@@ -82,7 +82,7 @@ class LaunchActivity : AppCompatActivity() {
     @Parcelize
     sealed interface DeepLink : Parcelable {
         /**
-         * Opens the onboarding flow for a new Home Assistant server.
+         * Opens the onboarding flow for a new Tez Sentinel server.
          * @property urlToOnboard Optional server URL to connect to directly. If null, shows server discovery.
          * @property hideExistingServers When true, hides already registered servers from discovery results.
          * @property skipWelcome When true, skips the welcome screen and navigates directly to server discovery,
@@ -96,7 +96,7 @@ class LaunchActivity : AppCompatActivity() {
 
         /**
          * Navigates to a specific path within the webview.
-         * @property path The path to navigate to within the Home Assistant interface.
+         * @property path The path to navigate to within the Tez Sentinel interface.
          * @property serverId The ID of the server to use for navigation.
          */
         data class NavigateTo(val path: String?, val serverId: Int) : DeepLink

@@ -4,7 +4,7 @@ import androidx.annotation.StringRes
 import io.homeassistant.companion.android.common.R as commonR
 
 /**
- * Represents errors that can occur when connecting to a Home Assistant server.
+ * Represents errors that can occur when connecting to a Tez Sentinel server.
  *
  * This sealed interface provides a type-safe way to handle different connection
  * error scenarios with appropriate user-facing messages.

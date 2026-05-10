@@ -22,7 +22,7 @@ import kotlinx.coroutines.flow.update
 import timber.log.Timber
 
 /**
- * Manages the ExoPlayer lifecycle for streams requested by the Home Assistant frontend.
+ * Manages the ExoPlayer lifecycle for streams requested by the Tez Sentinel frontend.
  *
  * The frontend sends `exoplayer/play_hls`, `exoplayer/resize`, and `exoplayer/stop` messages
  * which are forwarded here as [FrontendHandlerEvent.ExoPlayerAction] instances. This manager

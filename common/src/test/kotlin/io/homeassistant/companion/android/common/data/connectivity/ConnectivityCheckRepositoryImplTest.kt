@@ -156,7 +156,7 @@ class ConnectivityCheckRepositoryImplTest {
         val serverInProgressState = states.firstOrNull { it.serverConnection is ConnectivityCheckResult.InProgress }
         assertNotNull(serverInProgressState)
 
-        // Verify Home Assistant verification check goes to InProgress
+        // Verify Tez Sentinel verification check goes to InProgress
         val haInProgressState = states.firstOrNull { it.homeAssistantVerification is ConnectivityCheckResult.InProgress }
         assertNotNull(haInProgressState)
     }
@@ -395,7 +395,7 @@ class ConnectivityCheckRepositoryImplTest {
     )
 
     @Test
-    fun `Given server is not Home Assistant when running checks then HA verification fails`() = runTest {
+    fun `Given server is not Tez Sentinel when running checks then HA verification fails`() = runTest {
         // Given
         val testUrl = "https://example.com"
         coEvery { checker.dns("example.com") } returns ConnectivityCheckResult.Success(commonR.string.connection_check_dns, "192.0.2.1")

@@ -39,7 +39,7 @@ import timber.log.Timber
 data class BridgeState(val serverId: Int, val url: String?)
 
 /**
- * Parsed message received from the Home Assistant frontend via the JavaScript bridge.
+ * Parsed message received from the Tez Sentinel frontend via the JavaScript bridge.
  *
  * Both V1 and V2 protocols convert their raw input into a [BridgeMessage] variant
  * before dispatching to the handler via [FrontendJsBridge.dispatchToHandler].
@@ -94,7 +94,7 @@ private val bridgeMessageJson = Json(frontendExternalBusJson) {
 }
 
 /**
- * JavaScript bridge that connects the Home Assistant frontend WebView with native Android code.
+ * JavaScript bridge that connects the Tez Sentinel frontend WebView with native Android code.
  *
  * This class supports two bridge protocols:
  * - **V1** (`externalApp`): Uses [WebView.addJavascriptInterface]. The frontend
@@ -311,7 +311,7 @@ class FrontendJsBridge @AssistedInject constructor(
          *
          * The frontend detects `window.externalApp` and calls methods on it directly.
          * This name is part of the frontend contract do not change without coordinating
-         * with the Home Assistant frontend team.
+         * with the Tez Sentinel frontend team.
          */
         const val EXTERNAL_APP_V1 = "externalApp"
 
@@ -320,7 +320,7 @@ class FrontendJsBridge @AssistedInject constructor(
          *
          * The frontend detects `window.externalAppV2.postMessage` and sends
          * JSON-encoded messages through it. This name is part of the frontend contract
-         * do not change without coordinating with the Home Assistant frontend team.
+         * do not change without coordinating with the Tez Sentinel frontend team.
          */
         const val EXTERNAL_APP_V2_LISTENER = "externalAppV2"
 
@@ -346,7 +346,7 @@ class FrontendJsBridge @AssistedInject constructor(
         /**
          * Whether this server supports the V2 bridge protocol.
          *
-         * V2 was introduced in Home Assistant 2026.4.2.
+         * V2 was introduced in Tez Sentinel 2026.4.2.
          */
         fun Server?.isServerSupportingExternalAppV2(): Boolean = this?.version?.isAtLeast(2026, 4, 2) == true
 

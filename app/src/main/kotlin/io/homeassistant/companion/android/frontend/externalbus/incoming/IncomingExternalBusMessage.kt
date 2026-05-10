@@ -9,9 +9,9 @@ import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.modules.SerializersModule
 
 /**
- * Base sealed interface for messages received from the Home Assistant frontend via the external bus.
+ * Base sealed interface for messages received from the Tez Sentinel frontend via the external bus.
  *
- * The external bus is a communication channel between the Home Assistant frontend
+ * The external bus is a communication channel between the Tez Sentinel frontend
  * and the Android app, allowing the frontend to request native functionality like
  * NFC tag writing, Matter commissioning, haptic feedback, etc.
  *
@@ -49,7 +49,7 @@ sealed interface IncomingExternalBusMessage {
 /**
  * Fallback message type for unknown or unhandled external bus message types.
  *
- * This allows the app to gracefully handle new message types from newer Home Assistant
+ * This allows the app to gracefully handle new message types from newer Tez Sentinel
  * versions without crashing. The raw JSON content is preserved for debugging or
  * forward compatibility.
  *
@@ -62,7 +62,7 @@ data class UnknownIncomingMessage(override val discriminator: String?, override 
 }
 
 /**
- * Message indicating the frontend's connection status to the Home Assistant server.
+ * Message indicating the frontend's connection status to the Tez Sentinel server.
  *
  * Sent when the frontend WebSocket connection state changes (connected/disconnected).
  */
@@ -133,7 +133,7 @@ data class OpenAssistPayload(
 )
 
 /**
- * Message requesting haptic feedback from the Home Assistant frontend.
+ * Message requesting haptic feedback from the Tez Sentinel frontend.
  *
  * Sent when the user interacts with UI elements in the frontend that provide
  * tactile feedback (e.g., toggling a switch, long-pressing an entity).

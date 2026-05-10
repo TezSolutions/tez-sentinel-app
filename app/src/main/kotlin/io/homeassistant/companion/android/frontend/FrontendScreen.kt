@@ -506,7 +506,7 @@ private fun Color.Overlay(modifier: Modifier = Modifier) {
 }
 
 /**
- * Applies the WebView configuration required to host the Home Assistant frontend
+ * Applies the WebView configuration required to host the Tez Sentinel frontend
  *
  * The `ClickableViewAccessibility` lint is suppressed because the touch listener only observes
  * multi-pointer swipe gestures (returning `false` for every event) — clicks still flow through
@@ -530,7 +530,7 @@ private fun WebView.configureForFrontend(
     settings.mediaPlaybackRequiresUserGesture = !autoPlayVideoEnabled
 
     // Enable first-party cookies globally and third-party cookies for this WebView.
-    // The Home Assistant frontend relies on third-party cookies for some integrations
+    // The Tez Sentinel frontend relies on third-party cookies for some integrations
     // (e.g. embedded content served from a different origin).
     CookieManager.getInstance().apply {
         setAcceptCookie(true)

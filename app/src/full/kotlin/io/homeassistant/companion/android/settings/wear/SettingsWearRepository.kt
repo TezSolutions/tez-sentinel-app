@@ -22,7 +22,7 @@ import timber.log.Timber
  * A lightweight server representation used exclusively for Wear OS onboarding operations.
  *
  * This class exists to avoid persisting a server in the app's database when onboarding a Wear
- * device to a Home Assistant instance that may not be registered on the phone. By keeping this
+ * device to a Tez Sentinel instance that may not be registered on the phone. By keeping this
  * as a transient data structure, the server management logic remains simpler and doesn't need
  * to handle temporary or Wear-only servers.
  *
@@ -56,9 +56,9 @@ data class WearServer(
 }
 
 /**
- * Handles Home Assistant server operations specifically for Wear OS device onboarding.
+ * Handles Tez Sentinel server operations specifically for Wear OS device onboarding.
  *
- * This repository is communicating directly with the Home Assistant server using [WearServer]
+ * This repository is communicating directly with the Tez Sentinel server using [WearServer]
  * credentials without requiring a persisted server in the app's database.
  */
 class SettingsWearRepository @Inject constructor(
@@ -97,7 +97,7 @@ class SettingsWearRepository @Inject constructor(
     }
 
     /**
-     * Renders a Home Assistant template string on the server.
+     * Renders a Tez Sentinel template string on the server.
      *
      * @param wearServer The server configuration containing the webhook URLs.
      * @param template The Jinja2 template string to render.
@@ -120,7 +120,7 @@ class SettingsWearRepository @Inject constructor(
     }
 
     /**
-     * Fetches all entities from the Home Assistant server.
+     * Fetches all entities from the Tez Sentinel server.
      *
      * Requires [WearServer.accessToken] to be set. Call [registerRefreshToken] first
      * to obtain an access token.

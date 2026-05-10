@@ -20,7 +20,7 @@ import timber.log.Timber
  * - Session authentication verification
  * - Insecure connection detection
  * - Security level configuration tracking
- * - Adding `external_auth=1` query parameter to signal the Home Assistant frontend
+ * - Adding `external_auth=1` query parameter to signal the Tez Sentinel frontend
  *   that authentication will be provided via the JavaScript bridge
  */
 @ViewModelScoped

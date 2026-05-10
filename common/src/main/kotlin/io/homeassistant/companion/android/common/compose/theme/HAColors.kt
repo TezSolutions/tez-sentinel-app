@@ -5,7 +5,7 @@ import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 
 /**
- * Defines the core color palette for the Home Assistant application.
+ * Defines the core color palette for the Tez Sentinel application.
  *
  * ## Core Color Tokens
  *
@@ -195,10 +195,10 @@ object HABrandColors {
 }
 
 /**
- * Home Assistant Color Scheme. HA* composables use the values from this class to theme the UI.
+ * Tez Sentinel Color Scheme. HA* composables use the values from this class to theme the UI.
  *
  * This class is inspired by [androidx.compose.material3.ColorScheme] and provides custom color tokens
- * aligned with the Home Assistant design system. It defines semantic color tokens, which are
+ * aligned with the Tez Sentinel design system. It defines semantic color tokens, which are
  * abstractions built on top of the core color tokens found in [HAColors].
  *
  * ## Semantic color tokens

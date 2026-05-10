@@ -52,7 +52,7 @@ private const val FALLBACK_READ_CHUNK_SIZE = FALLBACK_SAMPLE_RATE * READ_CHUNK_D
  * Converts a [ShortArray] of PCM 16-bit audio samples to a little-endian [ByteArray].
  *
  * Each 16-bit sample is split into two bytes (low byte first) matching the format
- * expected by the Home Assistant voice pipeline.
+ * expected by the Tez Sentinel voice pipeline.
  */
 fun ShortArray.toAudioBytes(): ByteArray {
     val byteArray = ByteArray(size * 2)

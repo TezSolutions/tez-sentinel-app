@@ -1731,7 +1731,7 @@ class WebViewActivity :
         }
 
         // Adjust the color of system bar font/icons to ensure proper contrast with
-        // the current Home Assistant theme's background color.
+        // the current Tez Sentinel theme's background color.
         if (statusBarColor != 0) {
             windowInsetsController.isAppearanceLightStatusBars = !isColorDark(statusBarColor)
         }
@@ -2237,7 +2237,7 @@ class WebViewActivity :
                 Timber.d("Show first view of default dashboard.")
                 navigateToDefaultDashboard()
             } else {
-                Timber.d("User is in the Home Assistant config. Will not show first view of the default dashboard.")
+                Timber.d("User is in the Tez Sentinel config. Will not show first view of the default dashboard.")
             }
         }
     }

@@ -47,7 +47,7 @@ class MobileAppIntegrationPresenterImpl @Inject constructor(
                 serverId = serverManager.addServer(temporaryServer)
                 serverManager.integrationRepository(serverId).registerDevice(deviceRegistration)
             } catch (e: Exception) {
-                Timber.e(e, "Unable to register with Home Assistant")
+                Timber.e(e, "Unable to register with Tez Sentinel")
                 if (serverId != null) {
                     serverManager.authenticationRepository(serverId).revokeSession()
                     serverManager.removeServer(serverId)

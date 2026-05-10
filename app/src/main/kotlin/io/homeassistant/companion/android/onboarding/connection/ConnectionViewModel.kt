@@ -36,8 +36,8 @@ internal sealed interface ConnectionNavigationEvent {
     /**
      * Emitted when authentication is successful and the code is available
      *
-     * @property url The URL of the Home Assistant instance
-     * @param authCode The authorization code returned by Home Assistant
+     * @property url The URL of the Tez Sentinel instance
+     * @param authCode The authorization code returned by Tez Sentinel
      * @param requiredMTLS The authentication required the use of mTLS
      */
     data class Authenticated(val url: String, val authCode: String, val requiredMTLS: Boolean) :

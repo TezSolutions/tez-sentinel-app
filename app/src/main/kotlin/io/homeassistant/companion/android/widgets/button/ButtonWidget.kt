@@ -334,7 +334,7 @@ class ButtonWidget : AppWidgetProvider() {
                     }
                 }
 
-                Timber.d("Sending action call to Home Assistant")
+                Timber.d("Sending action call to Tez Sentinel")
                 serverManager.integrationRepository(widget.serverId).callAction(domain, action, actionDataMap)
                 Timber.d("Action call sent successfully")
 

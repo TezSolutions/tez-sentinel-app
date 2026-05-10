@@ -110,7 +110,7 @@ fun View.applySafeDrawingInsets(
 
 /**
  * Applies safe area insets to the WebView by setting CSS custom properties.
- * These properties are used by the Home Assistant frontend for edge-to-edge display.
+ * These properties are used by the Tez Sentinel frontend for edge-to-edge display.
  */
 fun WebView.applyInsets(
     insets: WindowInsets,

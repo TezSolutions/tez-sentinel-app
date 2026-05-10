@@ -10,11 +10,11 @@ import kotlinx.coroutines.flow.Flow
 import okhttp3.OkHttpClient
 
 /**
- * This interface provides a low-level abstraction for interacting with the Home Assistant WebSocket API.
+ * This interface provides a low-level abstraction for interacting with the Tez Sentinel WebSocket API.
  *
  * **Key Responsibilities:**
  *   - Establishing and maintaining a WebSocket connection.
- *   - Handling authentication with Home Assistant.
+ *   - Handling authentication with Tez Sentinel.
  *   - Sending and receiving structured and raw messages.
  *   - Subscribing to and receiving events.
  *   - Managing the WebSocket connection lifecycle.

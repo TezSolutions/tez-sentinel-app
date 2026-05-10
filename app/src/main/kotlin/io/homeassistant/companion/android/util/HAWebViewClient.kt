@@ -20,9 +20,9 @@ import kotlinx.coroutines.flow.StateFlow
 import timber.log.Timber
 
 /**
- * Factory for creating [HAWebViewClient] instances dedicated to loading Home Assistant frontend.
+ * Factory for creating [HAWebViewClient] instances dedicated to loading Tez Sentinel frontend.
  *
- * The created clients handle Home Assistant-specific concerns such as TLS client authentication,
+ * The created clients handle Tez Sentinel-specific concerns such as TLS client authentication,
  * error mapping to [FrontendConnectionError], and JavaScript injection into the WebView.
  */
 class HAWebViewClientFactory @Inject constructor(@NamedKeyChain private val keyChainRepository: KeyChainRepository) {
@@ -68,7 +68,7 @@ class HAWebViewClientFactory @Inject constructor(@NamedKeyChain private val keyC
 }
 
 /**
- * WebViewClient dedicated to loading Home Assistant frontend.
+ * WebViewClient dedicated to loading Tez Sentinel frontend.
  *
  * Handles error mapping to [FrontendConnectionError], TLS client authentication, and crash recovery.
  * Use [HAWebViewClientFactory] to create instances.

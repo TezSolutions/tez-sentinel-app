@@ -4,7 +4,7 @@ import io.homeassistant.companion.android.frontend.session.AuthPayload
 import kotlinx.serialization.json.JsonElement
 
 /**
- * Handler interface for processing messages from the Home Assistant frontend.
+ * Handler interface for processing messages from the Tez Sentinel frontend.
  */
 interface FrontendJsHandler {
     /**

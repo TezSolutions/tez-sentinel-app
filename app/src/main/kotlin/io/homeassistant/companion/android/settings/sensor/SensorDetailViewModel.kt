@@ -138,7 +138,7 @@ class SensorDetailViewModel @Inject constructor(
 
     private suspend fun loadZones(): List<String> {
         if (zones.isNotEmpty()) return zones
-        Timber.d("Get zones from Home Assistant for listing zones in preferences...")
+        Timber.d("Get zones from Tez Sentinel for listing zones in preferences...")
         val cachedZones = mutableListOf<String>()
         coroutineScope {
             serverManager.servers().map { server ->
@@ -146,13 +146,13 @@ class SensorDetailViewModel @Inject constructor(
                     try {
                         serverManager.integrationRepository(server.id).getZones().map { "${server.id}_${it.entityId}" }
                     } catch (e: Exception) {
-                        Timber.e(e, "Error receiving zones from Home Assistant")
+                        Timber.e(e, "Error receiving zones from Tez Sentinel")
                         emptyList()
                     }
                 }
             }.awaitAll().forEach { cachedZones.addAll(it) }
         }
-        Timber.d("Successfully received " + cachedZones.size + " zones (" + cachedZones + ") from Home Assistant")
+        Timber.d("Successfully received " + cachedZones.size + " zones (" + cachedZones + ") from Tez Sentinel")
         zones = cachedZones
         return cachedZones
     }

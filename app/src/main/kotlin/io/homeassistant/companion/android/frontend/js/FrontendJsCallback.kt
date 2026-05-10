@@ -6,7 +6,7 @@ import android.webkit.WebView
  * Interface for registering the frontend JavaScript callbacks into a WebView.
  *
  * Implementations are responsible for setting up the communication channel between
- * the Home Assistant frontend and native Android code so that the frontend can invoke
+ * the Tez Sentinel frontend and native Android code so that the frontend can invoke
  * native callbacks (authentication, external bus, etc.).
  *
  * @see FrontendJsBridge

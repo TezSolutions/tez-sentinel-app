@@ -343,7 +343,7 @@ class HaControlsProviderService : ControlsProviderService() {
                             sentInitial = true
                             (entityIds - entities.keys).forEach { missingEntity ->
                                 Timber.e(
-                                    "Unable to get $missingEntity from Home Assistant, not returned in subscribe_entities.",
+                                    "Unable to get $missingEntity from Tez Sentinel, not returned in subscribe_entities.",
                                 )
                                 val entity = getFailedEntity(missingEntity, error404)
                                 entities["ha_failed.$missingEntity"] = entity
@@ -392,10 +392,10 @@ class HaControlsProviderService : ControlsProviderService() {
                         if (entity != null) {
                             entities[entityId] = entity
                         } else {
-                            Timber.e("Unable to get $entityId from Home Assistant, null response.")
+                            Timber.e("Unable to get $entityId from Tez Sentinel, null response.")
                         }
                     } catch (e: Exception) {
-                        Timber.e(e, "Unable to get $entityId from Home Assistant, caught exception.")
+                        Timber.e(e, "Unable to get $entityId from Tez Sentinel, caught exception.")
                         entities["ha_failed.$entityId"] = getFailedEntity(entityId, e)
                         id = "ha_failed.$entityId"
                     }

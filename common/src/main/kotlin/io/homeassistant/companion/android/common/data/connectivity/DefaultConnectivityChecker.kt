@@ -26,7 +26,7 @@ private data class ManifestResponse(val name: String? = null) {
     fun isHomeAssistant(): Boolean = name == HOME_ASSISTANT_NAME
 
     companion object {
-        private const val HOME_ASSISTANT_NAME = "Home Assistant"
+        private const val HOME_ASSISTANT_NAME = "Tez Sentinel"
     }
 }
 
@@ -115,7 +115,7 @@ internal class DefaultConnectivityChecker @Inject constructor() : ConnectivityCh
         } catch (e: CancellationException) {
             throw e
         } catch (e: Exception) {
-            Timber.d(e, "Home Assistant verification failed for $url")
+            Timber.d(e, "Tez Sentinel verification failed for $url")
             ConnectivityCheckResult.Failure(commonR.string.connection_check_error_not_home_assistant)
         }
     }

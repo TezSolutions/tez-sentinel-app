@@ -47,7 +47,7 @@ internal fun NavController.navigateToFrontend(
 }
 
 /**
- * Registers the frontend/webview destination for the Home Assistant app.
+ * Registers the frontend/webview destination for the Tez Sentinel app.
  *
  * When [WIPFeature.USE_FRONTEND_V2] is enabled, uses the new Compose-based [FrontendScreen].
  * Otherwise, falls back to the legacy [WebViewActivity].

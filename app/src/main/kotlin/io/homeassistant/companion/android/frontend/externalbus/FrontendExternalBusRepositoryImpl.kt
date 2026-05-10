@@ -21,10 +21,10 @@ import timber.log.Timber
 private const val BUFFER_CAPACITY = 10
 
 /**
- * JSON serializer configured for Home Assistant frontend communication.
+ * JSON serializer configured for Tez Sentinel frontend communication.
  *
  * The frontend uses camelCase naming (e.g., `externalBus`, `authCallback`), unlike the
- * Home Assistant core API which uses snake_case. Setting `namingStrategy = null` disables
+ * Tez Sentinel core API which uses snake_case. Setting `namingStrategy = null` disables
  * the default snake_case conversion from [kotlinJsonMapper].
  */
 @OptIn(ExperimentalSerializationApi::class)

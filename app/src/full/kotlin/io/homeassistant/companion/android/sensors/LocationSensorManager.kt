@@ -777,7 +777,7 @@ class LocationSensorManager :
                 logLocationUpdate(location, null, null, trigger, LocationHistoryItemResult.SKIPPED_ACCURACY)
             } else {
                 HighAccuracyLocationService.updateNotificationAddress(latestContext, location)
-                // Send new location to Home Assistant
+                // Send new location to Tez Sentinel
                 serverIds.forEach {
                     ioScope.launch { sendLocationUpdate(location, it, trigger) }
                 }
@@ -867,9 +867,9 @@ class LocationSensorManager :
                         serverManager(
                             latestContext,
                         ).integrationRepository(serverId).fireEvent(zoneStatusEvent, zoneAttr as Map<String, Any>)
-                        Timber.d("Event sent to Home Assistant")
+                        Timber.d("Event sent to Tez Sentinel")
                     } catch (e: Exception) {
-                        Timber.e(e, "Unable to send event to Home Assistant")
+                        Timber.e(e, "Unable to send event to Tez Sentinel")
                     }
                 }
             }
@@ -1081,7 +1081,7 @@ class LocationSensorManager :
                 zones[serverId] = serverManager(latestContext).integrationRepository(serverId).getZones()
                 zonesLastReceived[serverId] = System.currentTimeMillis()
             } catch (e: Exception) {
-                Timber.e(e, "Error receiving zones from Home Assistant")
+                Timber.e(e, "Error receiving zones from Tez Sentinel")
                 if (forceRefresh) zones[serverId] = emptyList()
             }
         }

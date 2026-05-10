@@ -3,7 +3,7 @@ package io.homeassistant.companion.android.common.util
 /**
  * Notification channel IDs for channels created by the app.
  *
- * These are distinct from channels created dynamically by the Home Assistant server
+ * These are distinct from channels created dynamically by the Tez Sentinel server
  * through notification commands.
  */
 const val CHANNEL_SENSOR_WORKER = "Sensor Worker"

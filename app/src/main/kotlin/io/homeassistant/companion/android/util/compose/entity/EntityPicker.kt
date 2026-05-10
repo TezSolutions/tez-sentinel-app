@@ -102,7 +102,7 @@ internal const val ENTITY_LIST_TEST_TAG = "entity_picker_list"
  * Data class representing an entity in the picker with searchable metadata.
  *
  * This class contains all the information needed to display and search for an entity,
- * including optional area and device names from Home Assistant registries.
+ * including optional area and device names from Tez Sentinel registries.
  */
 internal data class EntityPickerItem(
     val entityId: String,
@@ -163,7 +163,7 @@ internal data class EntityPickerItem(
 }
 
 /**
- * A picker component for selecting Home Assistant entities.
+ * A picker component for selecting Tez Sentinel entities.
  *
  * This composable displays different states:
  * - When no entity is selected: Shows an "Add entity" button

@@ -16,7 +16,7 @@ import io.homeassistant.companion.android.common.compose.theme.HATextStyle.Headl
 import io.homeassistant.companion.android.common.compose.theme.HATextStyle.UserInput
 
 /**
- * Object defining the different text styles used in the Home Assistant app.
+ * Object defining the different text styles used in the Tez Sentinel app.
  * Each text style is a combination of font style, font size, line height, font weight, text align, and letter spacing.
  *
  * Available text styles:

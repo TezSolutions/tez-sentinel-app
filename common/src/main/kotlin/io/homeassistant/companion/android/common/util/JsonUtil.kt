@@ -56,7 +56,7 @@ fun JsonArray.toStringList(): List<String> = List(size) { i ->
 }
 
 /**
- * Kotlinx serialization Json instance to use while interacting with the API of Home Assistant Core.
+ * Kotlinx serialization Json instance to use while interacting with the API of Tez Sentinel Core.
  */
 @OptIn(ExperimentalSerializationApi::class)
 val kotlinJsonMapper = Json {

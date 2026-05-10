@@ -9,7 +9,7 @@ import androidx.compose.ui.unit.dp
 import io.homeassistant.companion.android.common.compose.theme.LocalHAColorScheme
 
 /**
- * Composable function that displays a circular progress indicator with Home Assistant styling.
+ * Composable function that displays a circular progress indicator with Tez Sentinel styling.
  * This is used to indicate an indeterminate loading state.
  *
  * @param modifier The modifier to be applied to the indicator.
@@ -27,7 +27,7 @@ fun HALoading(modifier: Modifier = Modifier, strokeWidth: Dp = ProgressIndicator
 }
 
 /**
- * Composable function that displays a circular progress indicator with Home Assistant styling.
+ * Composable function that displays a circular progress indicator with Tez Sentinel styling.
  *
  * @param progress A lambda function that returns the current progress value (between 0.0f and 1.0f).
  * @param modifier Optional [Modifier] to be applied to the progress indicator.

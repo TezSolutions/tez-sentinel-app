@@ -45,7 +45,7 @@ import timber.log.Timber
  * Handles external bus message routing and script evaluation for the frontend WebView.
  *
  * This handler implements [FrontendJsHandler] to receive JavaScript bridge callbacks
- * and processes incoming messages from the Home Assistant frontend via the external bus,
+ * and processes incoming messages from the Tez Sentinel frontend via the external bus,
  * mapping them to [FrontendHandlerEvent].
  *
  * Responsibilities:

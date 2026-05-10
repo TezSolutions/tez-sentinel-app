@@ -23,7 +23,7 @@ import io.homeassistant.companion.android.common.compose.theme.LocalHAColorSchem
 import kotlinx.coroutines.launch
 
 /**
- * Generic top bar for Home Assistant screens with optional buttons
+ * Generic top bar for Tez Sentinel screens with optional buttons
  * - if onHelpClick is not null, a help button will be added
  * - if onBackClick is not null, a back button will be added
  * - if onCloseClick is not null, a close button will be added

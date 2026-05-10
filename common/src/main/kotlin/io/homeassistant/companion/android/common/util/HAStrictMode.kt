@@ -18,7 +18,7 @@ interface IgnoreViolationRule {
 object HAStrictMode {
     /**
      * This method enable strict mode (VM and Thread policies) with a custom configuration that is
-     * specific to the Home Assistant application.
+     * specific to the Tez Sentinel application.
      *
      * The thread policy is configured to detect all potential issues and log them.
      *

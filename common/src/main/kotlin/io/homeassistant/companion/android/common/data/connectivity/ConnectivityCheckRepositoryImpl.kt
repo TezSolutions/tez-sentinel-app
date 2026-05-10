@@ -50,7 +50,7 @@ internal class ConnectivityCheckRepositoryImpl @Inject constructor(private val c
         state = serverCheckEmitSkipIfFailed(state, url)
         if (state.serverConnection is ConnectivityCheckResult.Failure) return@flow
 
-        // Home Assistant Verification Check
+        // Tez Sentinel Verification Check
         state = homeAssistantCheckAndEmit(state, url)
     }
 
@@ -167,8 +167,8 @@ internal class ConnectivityCheckRepositoryImpl @Inject constructor(private val c
     /**
      * Marks remaining connectivity checks as skipped based on which check failed.
      *
-     * - [SkipReason.AFTER_DNS_FAILURE]: Skips port, TLS, server, and Home Assistant checks.
-     * - [SkipReason.AFTER_SERVER_FAILURE]: Skips only the Home Assistant verification check.
+     * - [SkipReason.AFTER_DNS_FAILURE]: Skips port, TLS, server, and Tez Sentinel checks.
+     * - [SkipReason.AFTER_SERVER_FAILURE]: Skips only the Tez Sentinel verification check.
      */
     private fun ConnectivityCheckState.skip(reason: SkipReason): ConnectivityCheckState {
         val skipped = ConnectivityCheckResult.Failure(commonR.string.connection_check_skipped)

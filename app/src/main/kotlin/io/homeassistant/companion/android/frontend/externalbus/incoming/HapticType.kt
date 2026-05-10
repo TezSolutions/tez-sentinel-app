@@ -7,7 +7,7 @@ import kotlinx.serialization.json.JsonClassDiscriminator
 import kotlinx.serialization.modules.SerializersModule
 
 /**
- * Represents the haptic feedback types sent by the Home Assistant frontend.
+ * Represents the haptic feedback types sent by the Tez Sentinel frontend.
  *
  * Each type maps to a specific Android haptic feedback constant or vibration pattern.
  * The frontend sends these as string identifiers via the external bus `haptic` message.

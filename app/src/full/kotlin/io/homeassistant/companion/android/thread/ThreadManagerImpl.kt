@@ -29,7 +29,7 @@ class ThreadManagerImpl @Inject constructor(
     private val packageManager: PackageManager,
 ) : ThreadManager {
     companion object {
-        // ID is a placeholder used in previous app versions / for older Home Assistant versions
+        // ID is a placeholder used in previous app versions / for older Tez Sentinel versions
         private const val BORDER_AGENT_ID = "0000000000000001"
     }
 

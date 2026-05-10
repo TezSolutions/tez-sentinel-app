@@ -137,9 +137,9 @@ abstract class SensorReceiverBase : BroadcastReceiver() {
                                     "android.intent_received",
                                     eventData as Map<String, Any>,
                                 )
-                                Timber.d("Event successfully sent to Home Assistant")
+                                Timber.d("Event successfully sent to Tez Sentinel")
                             } catch (e: Exception) {
-                                Timber.e(e, "Unable to send event data to Home Assistant")
+                                Timber.e(e, "Unable to send event data to Tez Sentinel")
                             }
                         }
                     }

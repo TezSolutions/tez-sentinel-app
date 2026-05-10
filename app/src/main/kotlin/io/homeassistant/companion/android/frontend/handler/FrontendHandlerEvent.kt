@@ -8,7 +8,7 @@ import io.homeassistant.companion.android.frontend.externalbus.incoming.HapticTy
 /**
  * Events emitted by [FrontendMessageHandler].
  *
- * These events are triggered by messages received from the Home Assistant frontend
+ * These events are triggered by messages received from the Tez Sentinel frontend
  * via the external bus.
  */
 sealed interface FrontendHandlerEvent {
@@ -19,7 +19,7 @@ sealed interface FrontendHandlerEvent {
     data object Connected : FrontendHandlerEvent
 
     /**
-     * Frontend reported disconnection from Home Assistant.
+     * Frontend reported disconnection from Tez Sentinel.
      */
     data object Disconnected : FrontendHandlerEvent
 

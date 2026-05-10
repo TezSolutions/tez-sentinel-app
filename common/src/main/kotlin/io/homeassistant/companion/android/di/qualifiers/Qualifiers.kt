@@ -10,7 +10,7 @@ import javax.inject.Qualifier
 annotation class NamedSessionStorage
 
 /**
- * Qualifier for [LocalStorage] dependencies related to Home Assistant integration.
+ * Qualifier for [LocalStorage] dependencies related to Tez Sentinel integration.
  */
 @Qualifier
 @Retention(AnnotationRetention.BINARY)

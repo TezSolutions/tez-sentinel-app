@@ -46,7 +46,7 @@ sealed interface FrontendViewState {
         FrontendViewState
 
     /**
-     * Content state when the WebView is displaying the Home Assistant frontend.
+     * Content state when the WebView is displaying the Tez Sentinel frontend.
      */
     data class Content(
         override val serverId: Int,

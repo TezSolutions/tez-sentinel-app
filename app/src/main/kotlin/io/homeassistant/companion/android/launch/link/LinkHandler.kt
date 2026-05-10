@@ -113,7 +113,7 @@ class LinkHandlerImpl @Inject constructor(private val serverManager: ServerManag
     }
 
     /**
-     * Attempts to extract the target Home Assistant instance URL from the fragment part of the provided URI.
+     * Attempts to extract the target Tez Sentinel instance URL from the fragment part of the provided URI.
      *
      * The expected invitation link format is:
      * Universal Link: `https://my.home-assistant.io/invite#url=http://homeassistant.local:8123`

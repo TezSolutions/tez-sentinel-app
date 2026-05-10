@@ -31,8 +31,8 @@ const val BLANK_URL = "about:blank"
 @VisibleForTesting const val HA_WEBVIEW_TAG = "ha_web_view_tag"
 
 /**
- * A composable that displays a WebView specifically configured for Home Assistant.
- * This WebView includes default settings for Home Assistant, such as:
+ * A composable that displays a WebView specifically configured for Tez Sentinel.
+ * This WebView includes default settings for Tez Sentinel, such as:
  * - Javascript/dom storage enabled
  * - Zoom controls disabled
  * - Night mode support

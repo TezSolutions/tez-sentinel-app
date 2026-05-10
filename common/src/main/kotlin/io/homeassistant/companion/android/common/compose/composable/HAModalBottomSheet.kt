@@ -29,7 +29,7 @@ fun rememberHAModalBottomSheetState(): SheetState = if (LocalInspectionMode.curr
 }
 
 /**
- * A modal bottom sheet that uses the Home Assistant theme.
+ * A modal bottom sheet that uses the Tez Sentinel theme.
  *
  * @param bottomSheetState The state of the bottom sheet.
  * @param modifier Optional [Modifier] for this bottom sheet.

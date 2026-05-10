@@ -111,7 +111,7 @@ class NfcViewModel @Inject constructor(private val serverManager: ServerManager,
                             serverManager.integrationRepository(server.id).scanTag(hashMapOf("tag_id" to it))
                             true
                         } catch (e: Exception) {
-                            Timber.e(e, "Unable to send tag to Home Assistant.")
+                            Timber.e(e, "Unable to send tag to Tez Sentinel.")
                             false
                         }
                     }

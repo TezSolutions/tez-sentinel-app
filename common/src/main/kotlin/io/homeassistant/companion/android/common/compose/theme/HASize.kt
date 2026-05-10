@@ -4,7 +4,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 /**
- * Object defining spacing constants for Home Assistant UI components.
+ * Object defining spacing constants for Tez Sentinel UI components.
  */
 object HADimens {
     val SPACE0 = 0.dp
@@ -31,7 +31,7 @@ object HADimens {
 }
 
 /**
- * Object defining general size constants for Home Assistant UI components.
+ * Object defining general size constants for Tez Sentinel UI components.
  */
 object HASize {
     /** Extra extra small size (8dp, equivalent to 0.5rem). */
@@ -66,7 +66,7 @@ object HASize {
 }
 
 /**
- * Object defining radius constants for Home Assistant UI components.
+ * Object defining radius constants for Tez Sentinel UI components.
  */
 object HARadius {
     /** Square radius (0dp). */
@@ -98,7 +98,7 @@ object HARadius {
 }
 
 /**
- * Object defining border width constants for Home Assistant UI components.
+ * Object defining border width constants for Tez Sentinel UI components.
  */
 object HABorderWidth {
     /** Small border width (1dp, equivalent to 0.0625rem). */
@@ -112,7 +112,7 @@ object HABorderWidth {
 }
 
 /**
- * Object defining font size constants for Home Assistant UI components.
+ * Object defining font size constants for Tez Sentinel UI components.
  */
 object HAFontSize {
     /** Extra small font size (10sp, equivalent to 0.625rem). */

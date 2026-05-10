@@ -9,7 +9,7 @@ import android.webkit.WebChromeClient
 import android.webkit.WebView
 
 /**
- * Custom [WebChromeClient] for the Home Assistant frontend WebView.
+ * Custom [WebChromeClient] for the Tez Sentinel frontend WebView.
  *
  * @param onPermissionRequest Callback when the page requests camera/microphone access.
  * @param onJsConfirm Callback when the page calls JavaScript `confirm()`.

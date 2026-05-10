@@ -26,7 +26,7 @@ import kotlinx.coroutines.withContext
 import timber.log.Timber
 
 /**
- * Handles the "Add To" functionality for Home Assistant entities, allowing users to add entities
+ * Handles the "Add To" functionality for Tez Sentinel entities, allowing users to add entities
  * to various Android platform features and connected devices.
  *
  * This class provides two main capabilities:

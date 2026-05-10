@@ -5,7 +5,6 @@ plugins {
 
 android {
     namespace = "io.homeassistant.companion.android.microwakeword"
-    ndkVersion = libs.versions.androidNdk.get()
 
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -14,6 +13,8 @@ android {
             cmake {
                 // Enable flexible page sizes for Android 15+ compatibility
                 arguments += "-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON"
+                arguments += "-DCMAKE_C_COMPILER=/usr/bin/clang"
+                arguments += "-DCMAKE_CXX_COMPILER=/usr/bin/clang++"
             }
         }
     }

@@ -100,7 +100,7 @@ import timber.log.Timber
 private val DELAY_BEFORE_RECONNECT = 10.seconds
 
 /**
- * Implementation of the [WebSocketCore] interface for managing WebSocket connections to a Home Assistant server.
+ * Implementation of the [WebSocketCore] interface for managing WebSocket connections to a Tez Sentinel server.
  *
  * ### Implementation Details:
  *

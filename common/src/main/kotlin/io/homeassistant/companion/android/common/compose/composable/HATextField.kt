@@ -19,7 +19,7 @@ import io.homeassistant.companion.android.common.compose.theme.LocalHAColorSchem
 import io.homeassistant.companion.android.common.compose.theme.MaxButtonWidth
 
 /**
- * A Home Assistant themed [OutlinedTextField]. This composable is the equivalent of the `ha-input` on the frontend.
+ * A Tez Sentinel themed [OutlinedTextField]. This composable is the equivalent of the `ha-input` on the frontend.
  *
  * **WARNING**: This composable is not yet ready to use in production and needs one round of iteration with the design team.
  *

@@ -229,7 +229,7 @@ class PhoneSettingsListener :
         } catch (e: CancellationException) {
             throw e
         } catch (e: Exception) {
-            Timber.e(e, "Unable to login to Home Assistant")
+            Timber.e(e, "Unable to login to Tez Sentinel")
             try {
                 if (serverId != null) {
                     serverManager.authenticationRepository(serverId).revokeSession()

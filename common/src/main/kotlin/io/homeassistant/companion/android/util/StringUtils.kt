@@ -7,7 +7,7 @@ import io.homeassistant.companion.android.common.BuildConfig
  * and "HIDDEN" otherwise, preventing user data from leaking into production logs.
  *
  * This should be used instead of manual `if (BuildConfig.DEBUG)` checks in Timber log messages
- * whenever the log contains data that could identify the user or their Home Assistant setup
+ * whenever the log contains data that could identify the user or their Tez Sentinel setup
  * (URLs, tokens, message payloads, etc.).
  *
  * ```kotlin

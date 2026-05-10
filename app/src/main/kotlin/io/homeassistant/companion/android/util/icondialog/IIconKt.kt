@@ -7,7 +7,7 @@ const val MDI_PREFIX = "mdi:"
 
 /**
  * Gets the MDI name of an Iconics icon.
- * MDI format is used by Home Assistant (ie "mdi:account-alert"),
+ * MDI format is used by Tez Sentinel (ie "mdi:account-alert"),
  * compared to Iconic's [IIcon.name] format (ie "cmd_account_alert").
  */
 val IIcon.mdiName: String

@@ -54,7 +54,7 @@ fun HABanner(modifier: Modifier = Modifier, content: @Composable RowScope.() -> 
 }
 
 /**
- * Displays a hint banner with a Home Assistant icon and text.
+ * Displays a hint banner with a Tez Sentinel icon and text.
  * This is a specialized variant of [HABanner] designed for displaying informational hints to the user.
  *
  * @param text The hint text to be displayed.

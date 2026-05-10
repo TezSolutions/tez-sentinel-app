@@ -293,7 +293,7 @@ private fun createNsdServiceInfo(baseUrl: String? = "http://localhost:8123", ver
         version?.let {
             attributes["version"] = it.toByteArray(Charsets.UTF_8)
         }
-        every { serviceName } returns "Home Assistant"
+        every { serviceName } returns "Tez Sentinel"
         every { serviceType } returns SERVICE_TYPE
         every { this@apply.attributes } returns attributes
     }

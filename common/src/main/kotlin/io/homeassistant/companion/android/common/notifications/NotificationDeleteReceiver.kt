@@ -59,7 +59,7 @@ class NotificationDeleteReceiver : BroadcastReceiver() {
                 serverManager.integrationRepository(serverId).fireEvent("mobile_app_notification_cleared", hashData)
                 Timber.d("Notification cleared event successful!")
             } catch (e: Exception) {
-                Timber.e(e, "Issue sending event to Home Assistant")
+                Timber.e(e, "Issue sending event to Tez Sentinel")
             }
         }
     }

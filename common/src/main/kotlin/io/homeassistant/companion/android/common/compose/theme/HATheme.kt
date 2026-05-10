@@ -10,7 +10,7 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
 
 /**
- * A custom theme built on top of [androidx.compose.material3.MaterialTheme] with Home Assistant colors.
+ * A custom theme built on top of [androidx.compose.material3.MaterialTheme] with Tez Sentinel colors.
  *
  * @param darkTheme Whether to use the dark theme. Defaults to the system setting.
  * @param content The content of the theme.

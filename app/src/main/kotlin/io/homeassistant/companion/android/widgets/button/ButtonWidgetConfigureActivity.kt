@@ -322,7 +322,7 @@ class ButtonWidgetConfigureActivity : BaseWidgetConfigureActivity<ButtonWidgetEn
                     } catch (e: Exception) {
                         // Custom components can cause actions to not load
                         // Display error text
-                        Timber.e(e, "Unable to load actions from Home Assistant")
+                        Timber.e(e, "Unable to load actions from Tez Sentinel")
                         if (server.id == selectedServerId) binding.widgetConfigServiceError.visibility = View.VISIBLE
                     }
                 }

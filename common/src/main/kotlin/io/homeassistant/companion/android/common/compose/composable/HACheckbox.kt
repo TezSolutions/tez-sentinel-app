@@ -10,7 +10,7 @@ import io.homeassistant.companion.android.common.compose.theme.LocalHAColorSchem
  * A composable function that displays a checkbox based on [Checkbox].
  *
  * Adjusts colors using [io.homeassistant.companion.android.common.compose.theme.HAColorScheme]
- * to match the Home Assistant design system.
+ * to match the Tez Sentinel design system.
  *
  * @param checked whether or not this checkbox is checked
  * @param onCheckedChange called when this checkbox is clicked. If `null`, then this checkbox will not be

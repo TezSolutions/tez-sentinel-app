@@ -20,7 +20,7 @@ fun nativeModeAction(carContext: CarContext): Action {
 }
 
 /**
- * Start the main native (non-vehicle UI) Home Assistant activity on the connected phone (Auto) or default vehicle
+ * Start the main native (non-vehicle UI) Tez Sentinel activity on the connected phone (Auto) or default vehicle
  * display (Automotive). This will allow onboarding or using dashboards, depending on the logged in state.
  *
  * Sets any values that may be required for compatibility.

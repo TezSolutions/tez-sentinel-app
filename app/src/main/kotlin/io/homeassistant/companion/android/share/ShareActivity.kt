@@ -48,7 +48,7 @@ class ShareActivity : BaseActivity() {
                     Toast.LENGTH_SHORT,
                 ).show()
             } catch (e: Exception) {
-                Timber.e(e, "Issue sharing with Home Assistant")
+                Timber.e(e, "Issue sharing with Tez Sentinel")
                 Toast.makeText(
                     applicationContext,
                     commonR.string.share_failed,

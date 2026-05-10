@@ -10,17 +10,17 @@ import okhttp3.HttpUrl
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 
 /**
- * Holds connection configuration for a Home Assistant server.
+ * Holds connection configuration for a Tez Sentinel server.
  *
  * This data class is embedded in [Server] and stored in Room database. It contains all URL
  * endpoints and network detection settings used to connect to the server.
  *
  * @property externalUrl The primary URL used to connect to the server from outside the home network.
  * @property internalUrl Optional URL used when the device is on the home network.
- * @property cloudUrl Optional Home Assistant Cloud remote UI URL, automatically updated from the server.
- * @property webhookId Unique identifier assigned by Home Assistant during device registration.
+ * @property cloudUrl Optional Tez Sentinel Cloud remote UI URL, automatically updated from the server.
+ * @property webhookId Unique identifier assigned by Tez Sentinel during device registration.
  * @property secret Shared secret for webhook authentication, if configured on the server.
- * @property cloudhookUrl Direct webhook URL provided by Home Assistant Cloud.
+ * @property cloudhookUrl Direct webhook URL provided by Tez Sentinel Cloud.
  * @property useCloud Whether to prefer the cloud URL over the external URL when not on the
  *   home network.
  * @property internalSsids List of Wi-Fi network names (SSIDs) that indicate the device is on

@@ -48,7 +48,7 @@ private class HAButtonColors(val buttonColors: ButtonColors, val rippleColor: Co
 private class HAIconButtonColors(val buttonColors: IconButtonColors, val rippleColor: Color)
 
 /**
- * Defines the visual styling variants for Home Assistant buttons.
+ * Defines the visual styling variants for Tez Sentinel buttons.
  * These variants typically map to different color schemes or semantic meanings.
  */
 enum class ButtonVariant {
@@ -344,7 +344,7 @@ private fun RowScope.ButtonDecorator(type: ButtonDecoratorType, content: @Compos
 }
 
 /**
- * Render the content layout of a Home Assistant button,
+ * Render the content layout of a Tez Sentinel button,
  * including optional prefix and suffix decorators and the main text label.
  */
 @Composable

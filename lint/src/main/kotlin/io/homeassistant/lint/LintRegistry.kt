@@ -21,7 +21,7 @@ class LintRegistry : IssueRegistry() {
     override val api: Int = CURRENT_API
 
     override val vendor: Vendor = Vendor(
-        vendorName = "Home Assistant",
+        vendorName = "Tez Sentinel",
         feedbackUrl = "https://github.com/home-assistant/android/issues",
         contact = "https://github.com/home-assistant/android/",
     )

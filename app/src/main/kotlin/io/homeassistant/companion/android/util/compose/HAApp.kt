@@ -22,7 +22,7 @@ import io.homeassistant.companion.android.launch.HAStartDestinationRoute
 import io.homeassistant.companion.android.loading.LoadingScreen
 
 /**
- * Main composable for the Home Assistant app.
+ * Main composable for the Tez Sentinel app.
  *
  * This composable sets up the basic structure of the app, including the [Scaffold] for layout,
  * a [SnackbarHost], and the [HANavHost] for handling navigation.

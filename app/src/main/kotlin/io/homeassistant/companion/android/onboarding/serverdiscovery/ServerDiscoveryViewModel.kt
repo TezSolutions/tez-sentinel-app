@@ -60,7 +60,7 @@ data class ServerDiscovered(val name: String, val url: URL, val version: HomeAss
 data class ServersDiscovered(val servers: List<ServerDiscovered>) : DiscoveryState
 
 /**
- * ViewModel responsible for managing the Home Assistant server discovery process.
+ * ViewModel responsible for managing the Tez Sentinel server discovery process.
  * It uses [HomeAssistantSearcher] to find instances on the local network
  * and emits the [DiscoveryState] through [discoveryFlow] state flow.
  */

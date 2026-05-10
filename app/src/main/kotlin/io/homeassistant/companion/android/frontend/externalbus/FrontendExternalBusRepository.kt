@@ -8,11 +8,11 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.serialization.json.JsonElement
 
 /**
- * Repository for typed communication with the Home Assistant frontend via the external bus.
+ * Repository for typed communication with the Tez Sentinel frontend via the external bus.
  *
  * This repository provides type-safe message handling for the FrontendScreen.
  * Messages are serialized/deserialized using kotlinx.serialization with polymorphic support,
- * allowing graceful handling of unknown message types from newer Home Assistant versions.
+ * allowing graceful handling of unknown message types from newer Tez Sentinel versions.
  *
  * @see <a href="https://developers.home-assistant.io/docs/frontend/external-bus">External bus documentation</a>
  */

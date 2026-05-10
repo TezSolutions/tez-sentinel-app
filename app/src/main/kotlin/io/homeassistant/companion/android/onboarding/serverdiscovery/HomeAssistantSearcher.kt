@@ -28,7 +28,7 @@ import timber.log.Timber
 internal data class HomeAssistantInstance(val name: String, val url: URL, val version: HomeAssistantVersion)
 
 /**
- * Interface responsible for discovering Home Assistant instances on the local network.
+ * Interface responsible for discovering Tez Sentinel instances on the local network.
  */
 internal interface HomeAssistantSearcher {
     /**

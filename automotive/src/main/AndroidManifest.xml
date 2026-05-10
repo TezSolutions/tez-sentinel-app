@@ -248,7 +248,7 @@
             android:exported="true"
             tools:ignore="ExportedReceiver">
             <!--As discussed in https://github.com/home-assistant/android/pull/5509 we are ok
-            about exposing this receiver since the data are not leaking outside of Home Assistant.
+            about exposing this receiver since the data are not leaking outside of Tez Sentinel.
             And Action would just force the update of the sensor nothing else.
             -->
             <intent-filter>

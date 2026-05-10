@@ -7,11 +7,11 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
 
 /**
- * Represents an action that allows users to add a Home Assistant entity to various Android
+ * Represents an action that allows users to add a Tez Sentinel entity to various Android
  * platform features (widgets, shortcuts, tiles, etc.) or connected devices (watches, automotive).
  *
  * This sealed interface is used for bidirectional communication between the Android app and the
- * Home Assistant frontend. The frontend can query available actions, and the user can select
+ * Tez Sentinel frontend. The frontend can query available actions, and the user can select
  * which action to perform for a specific entity.
  */
 @Serializable

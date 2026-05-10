@@ -370,7 +370,7 @@ private fun NavController.navigateToLocationForSecureConnectionConditionally(
 /**
  * Defines the onboarding navigation graph for Wear OS devices.
  *
- * This simplified flow is designed for pairing a Wear OS device with an existing Home Assistant
+ * This simplified flow is designed for pairing a Wear OS device with an existing Tez Sentinel
  * server. The flow includes:
  * 1. Server discovery showing existing servers (only shown if [urlToOnboard] is empty)
  * 2. Connection

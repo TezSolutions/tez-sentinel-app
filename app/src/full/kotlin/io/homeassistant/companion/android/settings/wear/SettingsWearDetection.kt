@@ -12,7 +12,7 @@ object SettingsWearDetection {
 
     /**
      * Returns if there are any Wear OS devices connected to this device. It does **not** indicate
-     * if they have the Home Assistant app installed.
+     * if they have the Tez Sentinel app installed.
      */
     suspend fun hasAnyNodes(context: Context): Boolean {
         if (context.isAutomotive()) return false
