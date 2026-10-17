@@ -374,3 +374,4 @@ merged_results.sarif
 !.claude/skills
 !.claude/settings.json
 .cursor
+tools/brand/.cache/

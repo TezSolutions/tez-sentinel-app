@@ -1,0 +1,8 @@
+{
+  "repo": "TezSolutions/TezSentinel",
+  "path": "HA/config/www/tez_sentinel/logo.png",
+  "sha": "7392334009a43bdf63ff378f9283ca439b51e834",
+  "launcher_bg": "#0B1218",
+  "debug_bg": "#3A1F0B",
+  "notes": "Pinned to a commit so a logo change upstream never alters a release silently. Bump sha deliberately."
+}
