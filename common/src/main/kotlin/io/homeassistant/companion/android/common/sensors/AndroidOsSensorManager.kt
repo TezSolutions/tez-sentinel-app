@@ -42,7 +42,7 @@ class AndroidOsSensorManager @Inject constructor(
     }
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#android-os-sensors"
+        return "https://sentinel.tezsolutions.in"
     }
 
     override val name: Int

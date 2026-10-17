@@ -158,7 +158,7 @@ class NetworkSensorManager @Inject constructor(
             commonR.string.basic_sensor_name_public_ip,
             commonR.string.sensor_description_public_ip,
             Mdi.Ip,
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#public-ip-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
             entityCategory = SensorManager.ENTITY_CATEGORY_DIAGNOSTIC,
         )
 
@@ -183,7 +183,7 @@ class NetworkSensorManager @Inject constructor(
             commonR.string.sensor_description_network_type,
             Mdi.Network,
             deviceClass = "enum",
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#network-type-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
             entityCategory = SensorManager.ENTITY_CATEGORY_DIAGNOSTIC,
             updateType = SensorManager.BasicSensor.UpdateType.INTENT,
         )
@@ -191,7 +191,7 @@ class NetworkSensorManager @Inject constructor(
     }
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#connection-type-sensor"
+        return "https://sentinel.tezsolutions.in"
     }
     override val name: Int
         get() = commonR.string.sensor_name_network

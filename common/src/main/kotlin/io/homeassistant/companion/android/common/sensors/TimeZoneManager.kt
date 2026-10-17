@@ -31,7 +31,7 @@ class TimeZoneManager @Inject constructor(
     }
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#current-time-zone-sensor"
+        return "https://sentinel.tezsolutions.in"
     }
     override val name: Int
         get() = commonR.string.sensor_name_time_zone

@@ -51,7 +51,7 @@ class OnBodySensorManager @Inject constructor(
     private val ioScope: CoroutineScope = CoroutineScope(Dispatchers.IO + Job())
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/wear-os/sensors"
+        return "https://sentinel.tezsolutions.in"
     }
 
     override val name: Int

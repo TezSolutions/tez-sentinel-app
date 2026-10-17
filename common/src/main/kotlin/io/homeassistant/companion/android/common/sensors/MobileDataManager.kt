@@ -51,7 +51,7 @@ class MobileDataManager @Inject constructor(
     }
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#mobile-data-sensors"
+        return "https://sentinel.tezsolutions.in"
     }
 
     override val name: Int

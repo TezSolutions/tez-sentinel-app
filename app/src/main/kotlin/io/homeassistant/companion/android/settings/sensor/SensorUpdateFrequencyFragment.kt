@@ -39,7 +39,7 @@ class SensorUpdateFrequencyFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        addHelpMenuProvider("https://companion.home-assistant.io/docs/core/sensors#android-sensors")
+        addHelpMenuProvider("https://sentinel.tezsolutions.in")
     }
 
     override fun onResume() {

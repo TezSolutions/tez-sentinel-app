@@ -29,7 +29,7 @@ class ManageWidgetsSettingsFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        addHelpMenuProvider("https://companion.home-assistant.io/docs/integrations/android-widgets")
+        addHelpMenuProvider("https://sentinel.tezsolutions.in")
     }
 
     override fun onResume() {

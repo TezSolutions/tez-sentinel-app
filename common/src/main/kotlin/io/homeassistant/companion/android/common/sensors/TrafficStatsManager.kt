@@ -76,7 +76,7 @@ class TrafficStatsManager @Inject constructor(
     }
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#traffic-stats-sensor"
+        return "https://sentinel.tezsolutions.in"
     }
     override val name: Int
         get() = commonR.string.sensor_name_traffic_stats

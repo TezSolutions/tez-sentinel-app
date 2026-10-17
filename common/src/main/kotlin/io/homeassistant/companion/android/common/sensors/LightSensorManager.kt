@@ -48,7 +48,7 @@ class LightSensorManager @Inject constructor(
     private val ioScope: CoroutineScope = CoroutineScope(Dispatchers.IO + Job())
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#light-sensor"
+        return "https://sentinel.tezsolutions.in"
     }
     override val name: Int
         get() = commonR.string.sensor_name_light

@@ -92,7 +92,7 @@ val CONNECTION_TIMEOUT = 10.seconds
 
 private const val APP_PREFIX = "app://"
 private const val INTENT_PREFIX = "intent:"
-private const val SECURITY_ALERT_URL = "https://www.home-assistant.io/latest-security-alert/"
+private const val SECURITY_ALERT_URL = "https://sentinel.tezsolutions.in"
 
 /**
  * URLs that must NOT trigger the "always show first view on app start" navigation.

@@ -79,7 +79,7 @@ class GeocodeSensorManager @Inject constructor(
     }
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#geocoded-location-sensor"
+        return "https://sentinel.tezsolutions.in"
     }
     override val name: Int
         get() = commonR.string.sensor_name_geolocation

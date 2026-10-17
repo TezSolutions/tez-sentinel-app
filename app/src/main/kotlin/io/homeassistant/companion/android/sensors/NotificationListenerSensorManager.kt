@@ -61,7 +61,7 @@ class NotificationListenerSensorManager @Inject constructor(
             commonR.string.basic_sensor_name_last_notification,
             commonR.string.sensor_description_last_notification,
             Mdi.BellRing,
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#last-notification",
+            docsLink = "https://sentinel.tezsolutions.in",
             updateType = SensorManager.BasicSensor.UpdateType.INTENT_ONLY,
             settings = notificationSettings,
         )
@@ -73,7 +73,7 @@ class NotificationListenerSensorManager @Inject constructor(
             commonR.string.basic_sensor_name_last_removed_notification,
             commonR.string.sensor_description_last_removed_notification,
             Mdi.BellRing,
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#last-removed-notification",
+            docsLink = "https://sentinel.tezsolutions.in",
             updateType = SensorManager.BasicSensor.UpdateType.INTENT_ONLY,
             settings = notificationSettings,
         )
@@ -86,7 +86,7 @@ class NotificationListenerSensorManager @Inject constructor(
             commonR.string.sensor_description_active_notification_count,
             Mdi.BellRing,
             unitOfMeasurement = "notifications",
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#active-notification-count",
+            docsLink = "https://sentinel.tezsolutions.in",
             stateClass = SensorManager.STATE_CLASS_MEASUREMENT,
             updateType = SensorManager.BasicSensor.UpdateType.INTENT,
             settings = listOf(
@@ -102,7 +102,7 @@ class NotificationListenerSensorManager @Inject constructor(
             commonR.string.sensor_description_media_session,
             Mdi.PlayCircle,
             deviceClass = "enum",
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#media-session-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
         )
     }
 
@@ -110,7 +110,7 @@ class NotificationListenerSensorManager @Inject constructor(
     private var listenerConnected = AtomicBoolean(false)
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#notification-sensors"
+        return "https://sentinel.tezsolutions.in"
     }
 
     override fun hasSensor(): Boolean {

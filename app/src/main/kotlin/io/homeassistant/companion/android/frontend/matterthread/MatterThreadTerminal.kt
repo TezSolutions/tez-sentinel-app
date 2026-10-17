@@ -63,6 +63,6 @@ sealed interface MatterThreadTerminal {
     }
 }
 
-private const val MATTER_TROUBLESHOOTING_URL = "https://www.home-assistant.io/integrations/matter#troubleshooting"
+private const val MATTER_TROUBLESHOOTING_URL = "https://sentinel.tezsolutions.in"
 private const val MATTER_INSTALL_TROUBLESHOOTING_URL =
-    "https://www.home-assistant.io/integrations/matter#troubleshooting-the-installation"
+    "https://sentinel.tezsolutions.in"

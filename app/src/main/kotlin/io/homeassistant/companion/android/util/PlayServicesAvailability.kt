@@ -1,6 +1,6 @@
 package io.homeassistant.companion.android.util
 
-const val PLAY_SERVICES_FLAVOR_DOC_URL = "https://companion.home-assistant.io/docs/core/android-flavors/"
+const val PLAY_SERVICES_FLAVOR_DOC_URL = "https://sentinel.tezsolutions.in"
 
 /**
  * Abstraction to check whether Google Play Services are expected but unavailable.

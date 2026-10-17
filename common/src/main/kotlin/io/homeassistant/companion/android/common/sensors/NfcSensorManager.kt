@@ -29,7 +29,7 @@ class NfcSensorManager @Inject constructor(
         )
     }
 
-    override fun docsLink() = "https://companion.home-assistant.io/docs/core/sensors#nfc-state-sensor"
+    override fun docsLink() = "https://sentinel.tezsolutions.in"
     override val name = commonR.string.sensor_name_nfc
 
     override suspend fun getAvailableSensors() = listOf(nfcStateSensor)

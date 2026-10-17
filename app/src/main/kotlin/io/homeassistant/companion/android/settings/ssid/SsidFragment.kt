@@ -65,7 +65,7 @@ class SsidFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        addHelpMenuProvider("https://companion.home-assistant.io/docs/troubleshooting/networking#setting-up-the-app")
+        addHelpMenuProvider("https://sentinel.tezsolutions.in")
     }
 
     override fun onResume() {

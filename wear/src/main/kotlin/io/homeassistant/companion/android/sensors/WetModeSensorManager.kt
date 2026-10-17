@@ -34,7 +34,7 @@ class WetModeSensorManager @Inject constructor(
     }
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/wear-os/sensors"
+        return "https://sentinel.tezsolutions.in"
     }
 
     private var wetModeEnabled: Boolean = false

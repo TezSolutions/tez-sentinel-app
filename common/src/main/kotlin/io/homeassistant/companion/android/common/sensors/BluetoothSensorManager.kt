@@ -187,7 +187,7 @@ class BluetoothSensorManager @Inject constructor(
     private val bleUuidMutex = Mutex()
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#bluetooth-sensors"
+        return "https://sentinel.tezsolutions.in"
     }
 
     override val name: Int

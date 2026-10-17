@@ -102,7 +102,7 @@ fun LoadNfcView(
                             val intent =
                                 Intent(
                                     Intent.ACTION_VIEW,
-                                    "https://companion.home-assistant.io/docs/integrations/universal-links".toUri(),
+                                    "https://sentinel.tezsolutions.in".toUri(),
                                 )
                             context.startActivity(intent)
                         },

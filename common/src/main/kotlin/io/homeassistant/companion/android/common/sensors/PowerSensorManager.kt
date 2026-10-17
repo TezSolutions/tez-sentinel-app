@@ -31,7 +31,7 @@ class PowerSensorManager @Inject constructor(
             commonR.string.basic_sensor_name_interactive,
             commonR.string.sensor_description_interactive,
             Mdi.Cellphone,
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#interactive-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
             entityCategory = SensorManager.ENTITY_CATEGORY_DIAGNOSTIC,
             updateType = SensorManager.BasicSensor.UpdateType.INTENT,
         )
@@ -43,7 +43,7 @@ class PowerSensorManager @Inject constructor(
             commonR.string.basic_sensor_name_doze,
             commonR.string.sensor_description_doze,
             Mdi.Sleep,
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#doze-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
             entityCategory = SensorManager.ENTITY_CATEGORY_DIAGNOSTIC,
             updateType = SensorManager.BasicSensor.UpdateType.INTENT,
         )
@@ -55,7 +55,7 @@ class PowerSensorManager @Inject constructor(
             commonR.string.basic_sensor_name_power_save,
             commonR.string.sensor_description_power_save,
             Mdi.BatteryPlus,
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#power-save-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
             entityCategory = SensorManager.ENTITY_CATEGORY_DIAGNOSTIC,
             updateType = SensorManager.BasicSensor.UpdateType.INTENT,
         )

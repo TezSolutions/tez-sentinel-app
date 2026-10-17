@@ -169,7 +169,7 @@ class HealthServicesSensorManager @Inject constructor(
     private val areHealthServicesSensorApisAvailable = SdkVersion.isAtLeast(Build.VERSION_CODES.R)
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/wear-os/sensors#health-services"
+        return "https://sentinel.tezsolutions.in"
     }
 
     override val name: Int

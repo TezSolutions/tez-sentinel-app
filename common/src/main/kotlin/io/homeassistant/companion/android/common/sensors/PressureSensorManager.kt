@@ -50,7 +50,7 @@ class PressureSensorManager @Inject constructor(
     private val ioScope: CoroutineScope = CoroutineScope(Dispatchers.IO + Job())
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#pressure-sensor"
+        return "https://sentinel.tezsolutions.in"
     }
 
     override val name: Int

@@ -35,7 +35,7 @@ class DNDSensorManager @Inject constructor(
     }
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#do-not-disturb-sensor"
+        return "https://sentinel.tezsolutions.in"
     }
 
     override val name: Int

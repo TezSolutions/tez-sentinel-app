@@ -399,7 +399,7 @@ class SettingsFragment(
         }
 
         findPreference<Preference>("privacy")?.let {
-            it.summary = "https://www.home-assistant.io/privacy/"
+            it.summary = "https://sentinel.tezsolutions.in"
             it.intent = Intent(Intent.ACTION_VIEW, it.summary.toString().toUri())
         }
 

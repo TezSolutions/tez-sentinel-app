@@ -32,7 +32,7 @@ class MediaControlsSettingsFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        addHelpMenuProvider("https://companion.home-assistant.io/docs/integrations/android-media-controls")
+        addHelpMenuProvider("https://sentinel.tezsolutions.in")
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.serviceEvents.collect { event ->

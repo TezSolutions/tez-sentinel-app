@@ -42,7 +42,7 @@ class PhoneStateSensorManager @Inject constructor(
             commonR.string.sensor_description_phone_state,
             Mdi.Phone,
             deviceClass = "enum",
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#phone-state-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
             updateType = SensorManager.BasicSensor.UpdateType.INTENT,
         )
 
@@ -139,7 +139,7 @@ class PhoneStateSensorManager @Inject constructor(
     )
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#cellular-provider-sensor"
+        return "https://sentinel.tezsolutions.in"
     }
     override val name: Int
         get() = commonR.string.sensor_name_phone

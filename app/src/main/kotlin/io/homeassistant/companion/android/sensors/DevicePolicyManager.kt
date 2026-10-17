@@ -32,7 +32,7 @@ class DevicePolicyManager @Inject constructor(
     }
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#work-profile-sensor"
+        return "https://sentinel.tezsolutions.in"
     }
 
     private var isManagedProfileAvailable: Boolean? = null

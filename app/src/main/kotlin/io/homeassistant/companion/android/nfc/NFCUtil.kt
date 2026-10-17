@@ -40,7 +40,7 @@ object NFCUtil {
      * Returns the URL stored on Home Assistant NFC tags for [tagId], the reverse of
      * [io.homeassistant.companion.android.util.UrlUtil.splitNfcTagId].
      */
-    fun createTagUrl(tagId: String): String = "https://www.home-assistant.io/tag/$tagId"
+    fun createTagUrl(tagId: String): String = "https://sentinel.tezsolutions.in"
 
     /**
      * Returns the candidate NDEF messages for a Home Assistant NFC tag: the tag [url] plus

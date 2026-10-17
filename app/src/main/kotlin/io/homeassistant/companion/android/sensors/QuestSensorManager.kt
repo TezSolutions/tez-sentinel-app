@@ -36,7 +36,7 @@ class QuestSensorManager @Inject constructor(
     }
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/oculus-quest/"
+        return "https://sentinel.tezsolutions.in"
     }
 
     override val name: Int

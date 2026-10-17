@@ -106,7 +106,7 @@ class LogFragment : Fragment() {
                 }
             })
 
-        addHelpMenuProvider("https://companion.home-assistant.io/docs/troubleshooting/faqs/#android-crash-logs")
+        addHelpMenuProvider("https://sentinel.tezsolutions.in")
 
         refreshLog()
 

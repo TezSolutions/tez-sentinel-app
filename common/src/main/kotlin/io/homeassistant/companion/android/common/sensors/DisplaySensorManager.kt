@@ -36,7 +36,7 @@ class DisplaySensorManager @Inject constructor(
             commonR.string.basic_sensor_name_screen_brightness,
             commonR.string.sensor_description_screen_brightness,
             statelessIcon = Mdi.Brightness6,
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#screen-brightness-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
         )
 
         @ProvidesSensor
@@ -48,7 +48,7 @@ class DisplaySensorManager @Inject constructor(
             Mdi.CellphoneOff,
             unitOfMeasurement = "ms",
             deviceClass = "duration",
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#screen-off-timeout-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
         )
 
         @ProvidesSensor
@@ -58,7 +58,7 @@ class DisplaySensorManager @Inject constructor(
             commonR.string.sensor_name_screen_orientation,
             commonR.string.sensor_description_screen_orientation,
             Mdi.ScreenRotation,
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#screen-orientation-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
             updateType = SensorManager.BasicSensor.UpdateType.INTENT,
         )
 
@@ -69,7 +69,7 @@ class DisplaySensorManager @Inject constructor(
             commonR.string.sensor_name_screen_rotation,
             commonR.string.sensor_description_screen_rotation,
             Mdi.ScreenRotation,
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#screen-rotation-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
             unitOfMeasurement = "°",
         )
     }
@@ -86,7 +86,7 @@ class DisplaySensorManager @Inject constructor(
     }
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#display-sensors"
+        return "https://sentinel.tezsolutions.in"
     }
 
     override suspend fun requestSensorUpdate() {

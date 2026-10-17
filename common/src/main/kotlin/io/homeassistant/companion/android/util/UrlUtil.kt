@@ -98,7 +98,7 @@ object UrlUtil {
     }
 
     /**
-     * Matches `https://www.home-assistant.io/tag/<id>` URLs in production. Debug builds also
+     * Matches `https://sentinel.tezsolutions.in<id>` URLs in production. Debug builds also
      * accept `next.home-assistant.io` so the tag flow can be exercised against the next branch
      * of the documentation site.
      */

@@ -37,7 +37,7 @@ abstract class AppSensorManagerBase(
             commonR.string.basic_sensor_name_current_version,
             commonR.string.sensor_description_current_version,
             Mdi.Android,
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#current-version-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
             entityCategory = SensorManager.ENTITY_CATEGORY_DIAGNOSTIC,
         )
 
@@ -49,7 +49,7 @@ abstract class AppSensorManagerBase(
             commonR.string.sensor_description_app_rx_gb,
             Mdi.RadioTower,
             unitOfMeasurement = "GB",
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#app-data-sensors",
+            docsLink = "https://sentinel.tezsolutions.in",
             stateClass = SensorManager.STATE_CLASS_TOTAL_INCREASING,
             entityCategory = SensorManager.ENTITY_CATEGORY_DIAGNOSTIC,
         )
@@ -62,7 +62,7 @@ abstract class AppSensorManagerBase(
             commonR.string.sensor_description_app_tx_gb,
             Mdi.RadioTower,
             unitOfMeasurement = "GB",
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#app-data-sensors",
+            docsLink = "https://sentinel.tezsolutions.in",
             stateClass = SensorManager.STATE_CLASS_TOTAL_INCREASING,
             entityCategory = SensorManager.ENTITY_CATEGORY_DIAGNOSTIC,
         )
@@ -75,7 +75,7 @@ abstract class AppSensorManagerBase(
             commonR.string.sensor_description_app_memory,
             Mdi.Memory,
             unitOfMeasurement = "GB",
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#app-memory-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
             stateClass = SensorManager.STATE_CLASS_MEASUREMENT,
             entityCategory = SensorManager.ENTITY_CATEGORY_DIAGNOSTIC,
         )
@@ -87,7 +87,7 @@ abstract class AppSensorManagerBase(
             commonR.string.basic_sensor_name_app_inactive,
             commonR.string.sensor_description_app_inactive,
             Mdi.TimerOutline,
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#app-usage-sensors",
+            docsLink = "https://sentinel.tezsolutions.in",
             entityCategory = SensorManager.ENTITY_CATEGORY_DIAGNOSTIC,
         )
 
@@ -99,7 +99,7 @@ abstract class AppSensorManagerBase(
             commonR.string.sensor_description_app_standby,
             Mdi.Android,
             deviceClass = "enum",
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#app-usage-sensors",
+            docsLink = "https://sentinel.tezsolutions.in",
             entityCategory = SensorManager.ENTITY_CATEGORY_DIAGNOSTIC,
         )
 
@@ -111,7 +111,7 @@ abstract class AppSensorManagerBase(
             commonR.string.sensor_description_app_importance,
             Mdi.Android,
             deviceClass = "enum",
-            docsLink = "https://companion.home-assistant.io/docs/core/sensors#app-importance-sensor",
+            docsLink = "https://sentinel.tezsolutions.in",
             entityCategory = SensorManager.ENTITY_CATEGORY_DIAGNOSTIC,
         )
     }

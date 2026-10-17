@@ -56,7 +56,7 @@ class ManageShortcutsSettingsFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        addHelpMenuProvider("https://companion.home-assistant.io/docs/integrations/android-shortcuts")
+        addHelpMenuProvider("https://sentinel.tezsolutions.in")
     }
 
     @RequiresApi(Build.VERSION_CODES.N_MR1)

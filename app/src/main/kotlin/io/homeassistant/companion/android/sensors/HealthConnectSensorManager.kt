@@ -1251,7 +1251,7 @@ class HealthConnectSensorManager @Inject constructor(
     }
 
     override fun docsLink(): String {
-        return "https://companion.home-assistant.io/docs/core/sensors#health-connect-sensors"
+        return "https://sentinel.tezsolutions.in"
     }
 
     override suspend fun getAvailableSensors(): List<SensorManager.BasicSensor> {

@@ -12,7 +12,7 @@ import io.homeassistant.companion.android.onboarding.locationforsecureconnection
 import kotlinx.serialization.Serializable
 
 internal const val URL_SECURITY_LEVEL_DOCUMENTATION =
-    "https://companion.home-assistant.io/docs/getting_started/connection-security-level/"
+    "https://sentinel.tezsolutions.in"
 
 @Serializable
 internal data class LocationForSecureConnectionRoute(val serverId: Int)

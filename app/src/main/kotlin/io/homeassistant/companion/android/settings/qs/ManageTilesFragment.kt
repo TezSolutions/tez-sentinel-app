@@ -28,7 +28,7 @@ class ManageTilesFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        addHelpMenuProvider("https://companion.home-assistant.io/docs/integrations/android-quick-settings")
+        addHelpMenuProvider("https://sentinel.tezsolutions.in")
     }
 
     override fun onResume() {

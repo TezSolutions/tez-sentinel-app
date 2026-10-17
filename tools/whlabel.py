@@ -21,6 +21,7 @@ NEW_APP_ID = "in.tezsolutions.sentinel"
 OLD_APP_ID = "io.homeassistant.companion.android"
 BRAND = "Sentinel"
 SCHEME = "sentinel"
+SUPPORT_URL = "https://sentinel.tezsolutions.in"  # single target for every help/docs/privacy link
 
 changed = []
 
@@ -77,7 +78,8 @@ def app_id():
 # ---------------------------------------------------------------- 2. strings
 # "Home Assistant X" where X names a server-side product/entity stays as is.
 KEEP = r"(?! (?:Core|Supervisor|OS|Operating System|Cloud|Container|Green|Yellow|Connect)\b)"
-HA_RE = re.compile(r"Home Assistant" + KEEP)
+# strings also use a literal \u00A0 (non-breaking space) between the words
+HA_RE = re.compile(r"Home(?: |\\u00A0|\u00A0)Assistant" + KEEP)
 
 
 def strings():
@@ -89,6 +91,34 @@ def strings():
             write(p, new)
             n += 1
     return n
+
+
+# ---------------------------------------------------------------- 2b. marketing copy + links
+# Strings whose wording is Home Assistant marketing, not just a name: rewritten, not substituted.
+COPY = {
+    "welcome_details": "Access your Sentinel node on the go.\\n\\nSentinel keeps your cameras and automations "
+                       "on your own hardware, with local control and privacy first. Connect this app to your node "
+                       "to view and control it from anywhere.",
+    "sensor_privacy": "You have full control over your data. When enabled, sensor data is only sent to your own "
+                      "Sentinel server. It will never be shared with Tez Solutions or third parties.",
+    "location_secure_connection_hint": "This data will never be shared with Tez Solutions or third parties.",
+}
+URL_RE = re.compile(r'https://(?:companion|www|community)\.home-assistant\.io[^"<\s]*')
+
+
+def copy_and_links():
+    p = ROOT / "common/src/main/res/values/strings.xml"
+    t = p.read_text(encoding="utf-8")
+    for name, text in COPY.items():
+        t, n = re.subn(rf'(<string name="{name}">).*?(</string>)', lambda m: m.group(1) + text.replace("'", "\\'") + m.group(2), t, flags=re.S)
+        if n != 1:
+            sys.exit(f"string {name} not found")
+    write(p, t)
+    for p in list(ROOT.glob("*/src/main/**/*.kt")) + list(ROOT.glob("*/src/main/res/**/*.xml")):
+        t = p.read_text(encoding="utf-8")
+        new = URL_RE.sub(SUPPORT_URL, t)
+        if new != t:
+            write(p, new)
 
 
 # ---------------------------------------------------------------- 3. deep links
@@ -171,6 +201,7 @@ def main():
     args = ap.parse_args()
     app_id()
     n = strings()
+    copy_and_links()
     deep_links()
     connectivity()
     logo_usage()

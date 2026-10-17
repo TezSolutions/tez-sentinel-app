@@ -49,7 +49,7 @@ class ManageControlsSettingsFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        addHelpMenuProvider("https://companion.home-assistant.io/docs/integrations/android-device-controls")
+        addHelpMenuProvider("https://sentinel.tezsolutions.in")
     }
 
     override fun onResume() {

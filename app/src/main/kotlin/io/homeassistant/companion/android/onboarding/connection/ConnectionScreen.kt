@@ -152,7 +152,7 @@ private fun ErrorPlaceholder() {
 private fun ConnectionScreenPreview() {
     HAThemeForPreview {
         ConnectionScreen(
-            url = "https://www.home-assistant.io",
+            url = "https://sentinel.tezsolutions.in",
             isLoading = false,
             isError = false,
             getWebViewClient = { WebViewClient() },

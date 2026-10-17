@@ -33,7 +33,7 @@ class AssistSettingsFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        addHelpMenuProvider("https://www.home-assistant.io/voice_control/android/")
+        addHelpMenuProvider("https://sentinel.tezsolutions.in")
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 AssistVoiceInteractionService.wakeWordDetections(requireContext()).collect {
