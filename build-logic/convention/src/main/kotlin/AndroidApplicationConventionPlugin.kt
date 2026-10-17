@@ -5,7 +5,8 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
 
-private const val APPLICATION_ID = "io.homeassistant.companion.android"
+private const val NAMESPACE = "io.homeassistant.companion.android"
+private const val APPLICATION_ID = "in.tezsolutions.sentinel"
 
 /**
  * A convention plugin that applies common configurations to Android application modules.
@@ -39,7 +40,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
             AndroidComposeConventionPlugin().apply(target)
 
             extensions.configure<ApplicationExtension> {
-                namespace = APPLICATION_ID
+                namespace = NAMESPACE
 
                 defaultConfig {
                     applicationId = APPLICATION_ID

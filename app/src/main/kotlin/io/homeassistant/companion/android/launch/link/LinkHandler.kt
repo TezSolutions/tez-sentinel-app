@@ -16,7 +16,7 @@ private const val NAVIGATE_URL_PATH = "/navigate/"
 private const val MY_BASE_DOMAIN = "my.home-assistant.io"
 private const val BASE_MY_REDIRECT_URL = "https://$MY_BASE_DOMAIN$REDIRECT_URL_PATH"
 
-internal const val HA_DEEP_LINK_SCHEME = "homeassistant"
+internal const val HA_DEEP_LINK_SCHEME = "sentinel"
 
 private const val INTERNAL_MY_REDIRECT_PREFIX = "_my_redirect/"
 
@@ -28,7 +28,7 @@ private const val SERVER_ID_PARAM = "server_id"
 private const val MORE_INFO_ENTITY_ID_PARAM = "more-info-entity-id"
 
 /**
- * Builds the `homeassistant://navigate` deep link that [LinkHandler] resolves back to [target] on
+ * Builds the `sentinel://navigate` deep link that [LinkHandler] resolves back to [target] on
  * the server identified by [serverId]. Used for persisted intents (e.g. shortcuts) so they target
  * the stable, exported [LinkActivity] entry point rather than an internal activity.
  */
@@ -107,11 +107,11 @@ sealed interface LinkDestination {
 }
 
 /**
- * Handles universal links from `https://my.home-assistant.io` and some of the deep links from `homeassistant://`
+ * Handles universal links from `https://my.home-assistant.io` and some of the deep links from `sentinel://`
  */
 interface LinkHandler {
     /**
-     * Processes the given [uri] from `https://my.home-assistant.io` or `homeassistant://` and determines the
+     * Processes the given [uri] from `https://my.home-assistant.io` or `sentinel://` and determines the
      * intended navigation destination within the application.
      *
      * @param uri The universal link to handle.
@@ -184,7 +184,7 @@ class LinkHandlerImpl @Inject constructor(private val serverManager: ServerManag
      *
      * The expected invitation link format is:
      * Universal Link: `https://my.home-assistant.io/invite#url=http://homeassistant.local:8123`
-     * Deep Link: `homeassistant://invite/#url=http://homeassistant.local:8123`
+     * Deep Link: `sentinel://invite/#url=http://homeassistant.local:8123`
      *
      * The target URL is embedded in the fragment for security reasons,
      * preventing it from being sent to `my.home-assistant.io`. This function extracts the
@@ -243,7 +243,7 @@ class LinkHandlerImpl @Inject constructor(private val serverManager: ServerManag
     }
 
     /**
-     * Handles navigate deep links from `homeassistant://navigate/...`.
+     * Handles navigate deep links from `sentinel://navigate/...`.
      *
      * Server selection (in order of precedence):
      * - `server_id=<id>`: Uses the server with that stable id

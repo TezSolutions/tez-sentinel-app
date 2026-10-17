@@ -94,7 +94,7 @@ class DataUriDownloadManager @Inject constructor(@param:ApplicationContext priva
                     filename
                 } else {
                     // URLUtil doesn't handle data URIs correctly, so we have to use a generic filename
-                    var generated = "Home Assistant ${SimpleDateFormat(
+                    var generated = "Sentinel ${SimpleDateFormat(
                         "yyyy-MM-dd HH:mm:ss",
                         Locale.getDefault(),
                     ).format(Date())}"

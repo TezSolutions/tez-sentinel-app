@@ -95,6 +95,7 @@ import io.homeassistant.companion.android.common.util.SdkVersion
 import io.homeassistant.companion.android.util.compose.HAPreviews
 import java.net.URL
 import kotlinx.coroutines.launch
+import androidx.compose.ui.res.painterResource
 
 private val ICON_SIZE = 64.dp
 private val MaxContentWidth = MaxButtonWidth
@@ -335,7 +336,7 @@ private fun ServerItemContent(server: ServerDiscovered, onConnectClick: (URL) ->
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Image(
-            imageVector = ImageVector.vectorResource(R.drawable.ic_home_assistant_branding),
+            painter = painterResource(R.drawable.ic_sentinel_logo),
             contentDescription = null,
             modifier = Modifier
                 .size(ICON_SIZE)

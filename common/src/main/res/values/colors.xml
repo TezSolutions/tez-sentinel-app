@@ -41,5 +41,5 @@
     <color name="colorSpeechText">#B3E5FC</color>
     <color name="colorPreferenceSuggestion">#1F03A9F4</color> <!-- colorAccent 12% opacity -->
     <color name="colorOnSurfaceVariant">#49454E</color> <!-- M3 On Surface Variant -->
-    <color name="colorLauncherBackground">#18BCF2</color>
+    <color name="colorLauncherBackground">#0B1218</color>
 </resources>

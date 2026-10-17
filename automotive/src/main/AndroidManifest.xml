@@ -299,7 +299,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:scheme="homeassistant"
+                    android:scheme="sentinel"
                     android:host="navigate" />
             </intent-filter>
         </activity>
@@ -335,7 +335,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:scheme="homeassistant"
+                    android:scheme="sentinel"
                     android:host="invite" />
             </intent-filter>
         </activity>
@@ -357,7 +357,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:scheme="homeassistant"
+                    android:scheme="sentinel"
                     android:host="wear-phone-signin" />
             </intent-filter>
         </activity>

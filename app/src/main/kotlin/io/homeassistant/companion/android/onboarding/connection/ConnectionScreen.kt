@@ -40,6 +40,7 @@ import io.homeassistant.companion.android.loading.LoadingScreen
 import io.homeassistant.companion.android.util.compose.HAPreviews
 import io.homeassistant.companion.android.util.compose.webview.HAWebView
 import timber.log.Timber
+import androidx.compose.ui.res.painterResource
 
 @VisibleForTesting
 const val CONNECTION_SCREEN_TAG = "connection_screen"
@@ -139,7 +140,7 @@ private fun ErrorPlaceholder() {
         contentAlignment = Alignment.Center,
     ) {
         Image(
-            imageVector = ImageVector.vectorResource(R.drawable.ic_home_assistant_branding),
+            painter = painterResource(R.drawable.ic_sentinel_logo),
             contentDescription = null,
             modifier = Modifier.size(ICON_SIZE),
         )

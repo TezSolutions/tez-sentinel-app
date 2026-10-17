@@ -5,6 +5,6 @@
     <item android:width="112dp"
         android:height="112dp"
         android:gravity="center"
-        android:drawable="@drawable/app_icon_launch">
+        android:drawable="@drawable/ic_sentinel_logo">
     </item>
 </layer-list>

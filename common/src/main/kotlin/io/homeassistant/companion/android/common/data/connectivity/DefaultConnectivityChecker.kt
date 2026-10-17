@@ -27,11 +27,13 @@ import okhttp3.Response
 import timber.log.Timber
 
 @Serializable
-private data class ManifestResponse(val name: String? = null) {
-    fun isHomeAssistant(): Boolean = name == HOME_ASSISTANT_NAME
+private data class ManifestResponse(val name: String? = null, val id: String? = null) {
+    // Whitelabeled servers change the name; the manifest id is stable.
+    fun isHomeAssistant(): Boolean = name == HOME_ASSISTANT_NAME || id == HOME_ASSISTANT_MANIFEST_ID
 
     companion object {
         private const val HOME_ASSISTANT_NAME = "Home Assistant"
+        private const val HOME_ASSISTANT_MANIFEST_ID = "/?homescreen=1"
     }
 }
 

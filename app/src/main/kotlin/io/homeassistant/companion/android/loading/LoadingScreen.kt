@@ -53,6 +53,7 @@ import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
 import io.homeassistant.companion.android.common.compose.theme.LocalHAColorScheme
 import io.homeassistant.companion.android.common.util.SdkVersion
 import io.homeassistant.companion.android.util.compose.HAPreviews
+import androidx.compose.ui.res.painterResource
 
 /**
  * Size of the launch screen icon so the logo matches the system splash screen:
@@ -228,24 +229,12 @@ private fun LoadingIcon(offset: Dp, modifier: Modifier = Modifier) {
     LaunchedEffect(offset) {
         animatedOffset.animateTo(offset, tween(durationMillis = CONTENT_FADE_IN_MILLIS))
     }
-    val dotScales = logoDotScales()
     Image(
-        imageVector = ImageVector.vectorResource(R.drawable.app_icon_launch),
+        painter = painterResource(R.drawable.ic_sentinel_logo),
         contentDescription = stringResource(commonR.string.loading_content_description),
         modifier = modifier
             .size(ICON_SIZE)
             .graphicsLayer { translationY = -animatedOffset.value.toPx() }
-            .drawWithContent {
-                drawContent()
-                val scale = size.width / LOGO_VIEWPORT
-                LOGO_DOTS.forEachIndexed { index, dot ->
-                    drawCircle(
-                        color = LOGO_DOT_COLOR,
-                        radius = LOGO_DOT_RADIUS * scale * dotScales[index].value,
-                        center = dot.center * scale,
-                    )
-                }
-            },
     )
 }
 

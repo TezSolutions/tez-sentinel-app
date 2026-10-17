@@ -35,6 +35,7 @@ import io.homeassistant.companion.android.launch.startLaunchWithNavigateTo
 import io.homeassistant.companion.android.settings.server.ServerChooser
 import io.homeassistant.companion.android.settings.server.ServerChooserItem
 import kotlinx.coroutines.launch
+import androidx.compose.ui.res.painterResource
 
 @AndroidEntryPoint
 class LinkActivity : BaseActivity() {
@@ -101,7 +102,7 @@ fun LinkActivityScreen(
 ) {
     Box(modifier = modifier.fillMaxSize()) {
         Image(
-            imageVector = ImageVector.vectorResource(R.drawable.app_icon_launch),
+            painter = painterResource(R.drawable.ic_sentinel_logo),
             contentDescription = null,
             modifier = Modifier
                 .size(112.dp)

@@ -121,7 +121,7 @@ class OnboardingActivity :
         lifecycleScope.launch {
             showLoading()
             try {
-                val url = "homeassistant://wear-phone-signin${if (instance != null) "?url=${instance.url}" else ""}"
+                val url = "sentinel://wear-phone-signin${if (instance != null) "?url=${instance.url}" else ""}"
                 remoteActivityHelper.startRemoteActivity(
                     Intent(Intent.ACTION_VIEW).apply {
                         addCategory(Intent.CATEGORY_DEFAULT)

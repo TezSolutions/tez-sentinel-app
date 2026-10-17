@@ -30,6 +30,7 @@ import io.homeassistant.companion.android.common.compose.composable.HAPlainButto
 import io.homeassistant.companion.android.common.compose.theme.HADimens
 import io.homeassistant.companion.android.common.compose.theme.HATextStyle
 import io.homeassistant.companion.android.common.compose.theme.MaxButtonWidth
+import androidx.compose.ui.res.painterResource
 
 private val ICON_SIZE = 120.dp
 
@@ -80,7 +81,7 @@ internal fun WelcomeTemplate(
             Spacer(modifier = Modifier.weight(positionPercentage))
 
             Image(
-                imageVector = ImageVector.vectorResource(R.drawable.ic_home_assistant_branding),
+                painter = painterResource(R.drawable.ic_sentinel_logo),
                 contentDescription = stringResource(commonR.string.home_assistant_branding_icon_content_description),
                 modifier = Modifier.size(ICON_SIZE),
             )

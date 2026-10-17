@@ -50,7 +50,7 @@ private const val SHORTCUT_EXTRA_ICON_ID = "iconId"
 /**
  * Manage Shortcuts.
  *
- * Shortcuts launch through the stable, exported [LinkActivity] via a `homeassistant://navigate`
+ * Shortcuts launch through the stable, exported [LinkActivity] via a `sentinel://navigate`
  * deep link. Older app versions launched `WebViewActivity` directly; [migrateLegacyShortcuts]
  * rewrites those to the current format so they keep working once `WebViewActivity` is removed.
  */
@@ -62,7 +62,7 @@ internal class HaShortcutManager @Inject constructor(
 
     /**
      * Builds a [ShortcutInfoCompat] that launches [path] on [serverId] through a
-     * `homeassistant://navigate` deep link.
+     * `sentinel://navigate` deep link.
      *
      * The launch destination lives in the intent data URI; `ShortcutInfo` serializes only the extras
      * into a [android.os.PersistableBundle], so the server id and raw path are kept as primitive
@@ -81,7 +81,7 @@ internal class HaShortcutManager @Inject constructor(
             navigateDeepLinkUri(FrontendTarget.fromRawPath(path), serverId),
         ).apply {
             // Scope to our app rather than hard-coding the activity: the persisted shortcut then
-            // resolves to whichever activity handles homeassistant://navigate (currently
+            // resolves to whichever activity handles sentinel://navigate (currently
             // LinkActivity), so it survives internal navigation refactors, while the package scope
             // still prevents another app registering the scheme from intercepting it.
             setPackage(context.packageName)
@@ -134,7 +134,7 @@ internal class HaShortcutManager @Inject constructor(
      * to the current deep link format, updating dynamic and pinned shortcuts in place while
      * preserving their label, icon and target.
      *
-     * Best-effort and idempotent: shortcuts already pointing at the `homeassistant://` deep link are
+     * Best-effort and idempotent: shortcuts already pointing at the `sentinel://` deep link are
      * skipped, so re-running does nothing. Safe to call on any API level (no-op below N_MR1).
      */
     suspend fun migrateLegacyShortcuts() {

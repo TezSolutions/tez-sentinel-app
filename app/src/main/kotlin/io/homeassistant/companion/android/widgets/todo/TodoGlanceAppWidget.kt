@@ -162,7 +162,7 @@ private fun EmptyScreen() {
         modifier = GlanceModifier.todoWidgetBackground().semantics { testTag = "EmptyScreen" },
     ) {
         Image(
-            provider = ImageProvider(R.drawable.app_icon_launch),
+            provider = ImageProvider(R.drawable.ic_sentinel_logo),
             contentDescription = null,
             modifier = GlanceModifier.padding(bottom = 8.dp).size(HomeAssistantGlanceTheme.dimensions.iconSize),
         )
