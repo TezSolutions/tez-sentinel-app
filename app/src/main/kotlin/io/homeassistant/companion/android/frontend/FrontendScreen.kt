@@ -501,7 +501,7 @@ private fun StateOverlay(
         enter = EnterTransition.None,
         exit = fadeOut(animationSpec = tween(durationMillis = LOADING_OVERLAY_FADE_OUT_MILLIS)),
     ) {
-        LoadingScreen(modifier = Modifier.background(LocalHAColorScheme.current.colorSurfaceDefault), showBrand = true)
+        LoadingScreen(modifier = Modifier.background(LocalHAColorScheme.current.colorSurfaceDefault), showBrand = false)
     }
 }
 

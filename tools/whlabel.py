@@ -160,6 +160,12 @@ LOGO_VECTOR_RE = re.compile(r"imageVector = ImageVector\.vectorResource\((?:R|co
 def logo_usage():
     # "A project from the Open Home Foundation" footer of the loading screen
     sub(APP + "util/compose/HANavHost.kt", "LoadingScreen(showBrand = true)", "LoadingScreen()")
+    # Every other caller (FrontendScreen splash, debug playground, screenshot test) passes showBrand = true too:
+    # switch the "A project from the Open Home Foundation" footer off everywhere.
+    for f in list(ROOT.glob("app/src/**/*.kt")):
+        t = f.read_text(encoding="utf-8")
+        if "showBrand = true" in t:
+            write(f, t.replace("showBrand = true", "showBrand = false"))
     for rel in ("onboarding/welcome/WelcomeTemplate.kt", "onboarding/serverdiscovery/ServerDiscoveryScreen.kt",
                 "onboarding/connection/ConnectionScreen.kt", "launch/link/LinkActivity.kt", "loading/LoadingScreen.kt"):
         p = ROOT / APP / rel

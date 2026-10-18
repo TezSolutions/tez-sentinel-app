@@ -29,7 +29,7 @@ class LoadingScreenshotTest {
     @Composable
     fun `LoadingScreen with branding`() {
         HAThemeForPreview {
-            LoadingScreen(modifier = Modifier, showBrand = true)
+            LoadingScreen(modifier = Modifier, showBrand = false)
         }
     }
 }

@@ -203,7 +203,7 @@ private fun DevPlayGroundScreen(context: Context? = null) {
                     modifier = Modifier.background(
                         LocalHAColorScheme.current.colorSurfaceDefault,
                     ),
-                    showBrand = true,
+                    showBrand = false,
                 )
                 BackHandler {
                     showLoading = false
