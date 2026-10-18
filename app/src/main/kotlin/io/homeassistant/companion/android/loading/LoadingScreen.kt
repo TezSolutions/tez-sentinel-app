@@ -165,7 +165,7 @@ fun LoadingScreen(modifier: Modifier = Modifier, showBrand: Boolean = false) {
                 )
                 Image(
                     imageVector = ohfLogo,
-                    contentDescription = "Open Home Foundation",
+                    contentDescription = "Tez Solutions",
                     modifier = Modifier
                         .padding(bottom = brandBottomPadding)
                         .height(ohfLogoHeight)

@@ -10,3 +10,6 @@ Fork of home-assistant/android, rebranded as **Sentinel** (`in.tezsolutions.sent
 Both scripts are idempotent. After merging upstream, re-run them and build.
 Kotlin packages and the Gradle `namespace` stay `io.homeassistant.companion.android` on purpose.
 Logo source/pin: `tools/brand/brand.json` (TezSolutions/TezSentinel, HA/config/www/tez_sentinel/logo.png).
+
+    python3 tools/brand_audit.py [--apk app.apk]   # regression: fails on any visible Home Assistant / Open Home Foundation / Nabu Casa text,
+                                                   # showBrand = true, wrong applicationId/app_name, homeassistant:// scheme (runs in CI)

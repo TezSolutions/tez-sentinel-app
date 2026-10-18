@@ -34,6 +34,9 @@ jobs:
           python3 tools/brand/fetch_brand.py
           git diff --exit-code -- app common
 
+      - name: Brand audit (source) - no Home Assistant / OHF / Nabu Casa text
+        run: python3 tools/brand_audit.py
+
       - name: Placeholder google-services.json (push is not configured yet)
         run: |
           python3 - <<'EOF'
@@ -61,6 +64,9 @@ jobs:
           KEYSTORE_ALIAS_PASSWORD: ${{ secrets.SENTINEL_KEYSTORE_PASSWORD }}
           VERSION_CODE: ${{ github.run_number }}
         run: ./gradlew --no-daemon :app:assembleMinimalRelease
+
+      - name: Brand audit (built APK)
+        run: python3 tools/brand_audit.py --apk app/build/outputs/apk/minimal/release/app-minimal-release.apk
 
       - uses: actions/upload-artifact@v4
         with:
