@@ -151,7 +151,7 @@ internal fun HANavHost(
                 carAppActivity(navController)
             }
         }
-    } ?: LoadingScreen(showBrand = true)
+    } ?: LoadingScreen()
 }
 
 /**

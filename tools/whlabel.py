@@ -101,6 +101,7 @@ COPY = {
                        "to view and control it from anywhere.",
     "sensor_privacy": "You have full control over your data. When enabled, sensor data is only sent to your own "
                       "Sentinel server. It will never be shared with Tez Solutions or third parties.",
+    "input_cloud": "Use cloud connection",
     "location_secure_connection_hint": "This data will never be shared with Tez Solutions or third parties.",
 }
 URL_RE = re.compile(r'https://(?:companion|www|community)\.home-assistant\.io[^"<\s]*')
@@ -157,6 +158,8 @@ LOGO_VECTOR_RE = re.compile(r"imageVector = ImageVector\.vectorResource\((?:R|co
 
 
 def logo_usage():
+    # "A project from the Open Home Foundation" footer of the loading screen
+    sub(APP + "util/compose/HANavHost.kt", "LoadingScreen(showBrand = true)", "LoadingScreen()")
     for rel in ("onboarding/welcome/WelcomeTemplate.kt", "onboarding/serverdiscovery/ServerDiscoveryScreen.kt",
                 "onboarding/connection/ConnectionScreen.kt", "launch/link/LinkActivity.kt", "loading/LoadingScreen.kt"):
         p = ROOT / APP / rel
